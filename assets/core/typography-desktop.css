@@ -1,0 +1,109 @@
+:root {
+  font-size: 16px;
+
+  /* font size heading */
+  --desktop-h1: 4rem; /* 64px */
+  --desktop-h2: 3.5rem; /* 56px */
+  --desktop-h3: 3rem; /* 48px */
+  --desktop-h4: 2.5rem; /* 40px */
+  --desktop-h5: 2rem; /* 32px */
+  --desktop-h6: 1.5rem; /* 24px */
+
+  /* font size content */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  /* Font Weight */
+  --fw-thin: 100;
+  --fw-extralight: 200;
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
+
+  /* line height */
+  --lh-none: 1; /* 100% */
+  --lh-tight: 1.25; /* 125% */
+  --lh-normal: 1.5; /* 150% */
+  --lh-relaxed: 1.75; /* 175% */
+  --lh-loose: 2; /* 200% */
+  /* letter spacing */
+  --ls-h1: -0.03em; /* ≈ -1.92px @ 64px */
+  --ls-h2: -0.025em; /* ≈ -1.40px @ 56px */
+  --ls-h3: -0.02em; /* ≈ -0.96px @ 48px */
+  --ls-h4: -0.015em; /* ≈ -0.60px @ 40px */
+  --ls-h5: -0.01em; /* ≈ -0.32px @ 32px */
+  --ls-h6: 0; /* 0px */
+
+  /* 1. Biến cơ sở (tương đương $spacer) */
+  --spacer: 1rem; /* Mặc định 16px */
+  /* 2. Định nghĩa các cấp độ khoảng cách (tương đương $spacers map) */
+  --space-0: 0;
+  --space-1: calc(var(--spacer) * 0.25); /* 4px  */
+  --space-2: calc(var(--spacer) * 0.5); /* 8px  */
+  --space-3: var(--spacer); /* 16px */
+  --space-4: calc(var(--spacer) * 1.5); /* 24px */
+  --space-5: calc(var(--spacer) * 3); /* 48px */
+  --space-6: calc(var(--spacer) * 4); /* 64px */
+}
+html,
+body {
+  font-family: "Jost", sans-serif;
+  color: #636363;
+}
+h1 {
+  font-size: var(--desktop-h1);
+  line-height: var(--lh-none);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-h1);
+  margin: var(--space-3);
+}
+
+h2 {
+  font-size: var(--desktop-h2);
+  line-height: var(--lh-tight);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-h2);
+  margin: var(--space-4) 0;
+}
+h3 {
+  font-size: var(--desktop-h3);
+  line-height: 1.2;
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-h3);
+  margin: var(--space-4) 0;
+}
+h4 {
+  font-size: 1.375rem; /* 22px */
+  line-height: 1.27;
+  font-weight: var(--fw-semibold);
+  margin: var(--space-4) 0;
+}
+
+h5 {
+  font-size: var(--text-lg); /* 18px */
+  line-height: 1.4;
+  font-weight: var(--fw-semibold);
+  margin: var(--space-3) 0;
+}
+
+h6 {
+  font-size: var(--text-base); /* 16px */
+  line-height: 1.5;
+  font-weight: var(--fw-semibold);
+  margin: var(--space-3) 0;
+}
+
+p {
+  font-size: var(--text-lg); /* 18px */
+  line-height: 1.6;
+  font-weight: var(--fw-normal);
+  margin: var(--space-3) 0;
+}

@@ -1,0 +1,24 @@
+/* font chữ */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+/* font icon */
+/* setup icon CDNjs*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Reset list icons */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Reset link underline and color */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
