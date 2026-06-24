@@ -41,7 +41,7 @@
   --ls-h4: -0.015em; /* ≈ -0.60px @ 40px */
   --ls-h5: -0.01em; /* ≈ -0.32px @ 32px */
   --ls-h6: 0; /* 0px */
-
+  /* Khoảng cách item này đển item khác */
   /* 1. Biến cơ sở (tương đương $spacer) */
   --spacer: 1rem; /* Mặc định 16px */
   /* 2. Định nghĩa các cấp độ khoảng cách (tương đương $spacers map) */
