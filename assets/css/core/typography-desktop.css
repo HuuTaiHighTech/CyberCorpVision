@@ -56,54 +56,27 @@
 html,
 body {
   font-family: "Jost", sans-serif;
-  color: #636363;
+  color: black;
 }
 h1 {
-  font-size: var(--desktop-h1);
-  line-height: var(--lh-none);
+  font-size: 4.0625rem;
+  line-height: 1.1;
   font-weight: var(--fw-semibold);
-  letter-spacing: var(--ls-h1);
-  margin: var(--space-3);
 }
-
 h2 {
-  font-size: var(--desktop-h2);
-  line-height: var(--lh-tight);
+  font-size: 3.125rem;
   font-weight: var(--fw-semibold);
   letter-spacing: var(--ls-h2);
-  margin: var(--space-4) 0;
 }
-h3 {
-  font-size: var(--desktop-h3);
-  line-height: 1.2;
+.title-big {
+  font-size: 2.1875rem;
+  line-height: 1.29;
+  font-weight: var(--fw-bold);
+}
+.kicker {
+  font-size: var(--text-sm);
+  line-height: 2.14;
   font-weight: var(--fw-semibold);
-  letter-spacing: var(--ls-h3);
-  margin: var(--space-4) 0;
-}
-h4 {
-  font-size: 1.375rem; /* 22px */
-  line-height: 1.27;
-  font-weight: var(--fw-semibold);
-  margin: var(--space-4) 0;
-}
-
-h5 {
-  font-size: var(--text-lg); /* 18px */
-  line-height: 1.4;
-  font-weight: var(--fw-semibold);
-  margin: var(--space-3) 0;
-}
-
-h6 {
-  font-size: var(--text-base); /* 16px */
-  line-height: 1.5;
-  font-weight: var(--fw-semibold);
-  margin: var(--space-3) 0;
-}
-
-p {
-  font-size: var(--text-lg); /* 18px */
-  line-height: 1.6;
-  font-weight: var(--fw-normal);
-  margin: var(--space-3) 0;
+  letter-spacing: 0.0714em;
+  text-transform: uppercase;
 }

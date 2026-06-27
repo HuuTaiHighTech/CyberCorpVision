@@ -26,7 +26,7 @@
         </mxCell>
         <mxCell id="uAzCNYcBnN0baQVRId0h-12" connectable="0" parent="uAzCNYcBnN0baQVRId0h-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Push" vertex="1">
           <mxGeometry relative="1" x="0.5974" y="3" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-113" y="-12" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bXl6ImCXWjE2_2-cK-2O-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Local repository" vertex="1">
@@ -35,14 +35,14 @@
         <mxCell id="uAzCNYcBnN0baQVRId0h-13" edge="1" parent="1" source="bXl6ImCXWjE2_2-cK-2O-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" target="bXl6ImCXWjE2_2-cK-2O-1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="800" y="200" />
+              <mxPoint x="950" y="200" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="uAzCNYcBnN0baQVRId0h-16" edge="1" parent="1" source="bXl6ImCXWjE2_2-cK-2O-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" target="bXl6ImCXWjE2_2-cK-2O-1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="800" y="260" />
+              <mxPoint x="950" y="260" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -52,7 +52,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bXl6ImCXWjE2_2-cK-2O-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="remote repository" vertex="1">
-          <mxGeometry height="60" width="120" x="740" y="420" as="geometry" />
+          <mxGeometry height="60" width="120" x="890" y="430" as="geometry" />
         </mxCell>
         <mxCell id="uAzCNYcBnN0baQVRId0h-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;text-align: justify; margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Reponsive (repo): Kho lưu trữ source code và tất cả các thay đổi&lt;/font&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;ul&gt;&lt;ul&gt;&lt;ul&gt;&lt;ul&gt;&lt;ul&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 13px;&quot;&gt;Local repo&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 13px;&quot;&gt;: Kho lưu trữ trên máy tính của chúng ta, mỗi máy sẽ là một repo&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 13px;&quot;&gt;Remote repo:&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 13px;&quot;&gt;&amp;nbsp;(github): Kho dữ liệu chứa trên server, có thể truy cập ở bất kỳ đâu&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;=&amp;gt; Dữ liệu ở local có thể được push lên để lưu trữ chung&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;=&amp;gt; dữ liệu remote có thể clone về local, mang theo tất cả các dữ liệu và thiết lập có sẵn&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Commit: Mỗi lần thay đổi source code, biến thành commit để tạo ra 1 version lưu trữ lại sự thay đổi, khi có lỗi thì có thể rollback về version trước đó&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;" vertex="1">
           <mxGeometry height="200" width="1090" x="60" y="-130" as="geometry" />
@@ -73,6 +73,32 @@
         </mxCell>
         <mxCell id="uAzCNYcBnN0baQVRId0h-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Clone" vertex="1">
           <mxGeometry height="30" width="60" x="740" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="4uOzuIaMPdHdrtR6NDQi-7" edge="1" parent="1" source="4uOzuIaMPdHdrtR6NDQi-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="4uOzuIaMPdHdrtR6NDQi-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4uOzuIaMPdHdrtR6NDQi-1" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" value="Xuất hiện sau khi chạy lệnh git init, chưa các thông tin về các file, commit .... của local repo&amp;nbsp;" vertex="1">
+          <mxGeometry height="100" width="100" x="365" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="4uOzuIaMPdHdrtR6NDQi-2" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" value="Đã có code ở local và cần update code mới từ online/remote về local" vertex="1">
+          <mxGeometry height="100" width="100" x="790" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="4uOzuIaMPdHdrtR6NDQi-3" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#fff2cc;strokeColor=#d6b656;" value="Chỉ dùng ở local khi chưa có dự án" vertex="1">
+          <mxGeometry height="100" width="100" x="850" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="4uOzuIaMPdHdrtR6NDQi-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="init" vertex="1">
+          <mxGeometry height="30" width="60" x="520" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="4uOzuIaMPdHdrtR6NDQi-9" edge="1" parent="1" source="4uOzuIaMPdHdrtR6NDQi-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4uOzuIaMPdHdrtR6NDQi-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4uOzuIaMPdHdrtR6NDQi-10" connectable="0" parent="4uOzuIaMPdHdrtR6NDQi-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="tạo local ở repo" vertex="1">
+          <mxGeometry relative="1" x="-0.0163" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4uOzuIaMPdHdrtR6NDQi-8" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="Git init" vertex="1">
+          <mxGeometry height="26" width="80" x="385" y="144" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
