@@ -1,1 +1,25 @@
 /* Layout và làm đẹp của trang home */
+.cta .cta-prev {
+    right: 95px;
+}
+.cta .cta-next {
+    right: 25px;
+}
+ .cta {
+    position: relative;
+
+ }
+/* button prev vs next  */
+.cta .cta-arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    border-radius: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+    border: 1px solid transparent;
+    background: white;
+    z-index: 12;
+    /* đường viền */
+    outline: none;
+}
