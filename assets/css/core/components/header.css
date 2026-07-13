@@ -1,98 +1,107 @@
-header{
+/* lúc nào cx dùng */
+body {
+    margin: 0;
+    padding-top: 100px;
+    transition: padding-top 0.4s ease 0s;
+}
+
+body.header-scrolled {
+    padding-top: 80px;
+}
+
+.fixed-top {
     position: fixed;
     top: 0;
+    right: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1030;
+}
+/* trước khi croll main header */
+header.main-header {
+    padding: 0px;
+    overflow: hidden;
+    transition: transform 0.4s ease 0s, height 0.4s ease 0s, background-color 0.4s ease 0s, box-shadow 0.4s ease 0s;
     height: 100px;
+    transform-origin: top;
+    transform: scaleY(1);
     display: grid;
     align-items: center;
-    transition: all 0.4s ease 0s;
-    will-change: transform;
-    overflow: hidden;
+    z-index: 10;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
 }
 
-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.35);
-  pointer-events: none;
+header.main-header nav {
+    background-color: pink;
+    transition: background-color 0.4s ease 0s;
 }
 
-body {
-    padding-top: 100px;
-}
-.navbar-icon {
-    font-size: 1.875rem;
-    color: var(--color-primary);
-    font-weight: var(--fw-semibold);
-
-}
-.brand-title {
-    font-size: 1.875rem;
-    color: var(--neutral-100);
-    font-weight: var(--fw-semibold);
-    line-height: 1;
-}
-.brand-subtitle {
-    font-size: 0.875rem;
-    font-weight: var(--fw-semibold);
-    color: var(--neutral-500);
-    line-height: 1.2;
-    opacity: .9;
-}
-.nav-item {
-    color: var(--neutral-500);
-    text-transform: uppercase;
-    font-size: 0.9375rem;
-    font-weight: var(--fw-semibold);
-    opacity: 1;
-}
-.nav-search {
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50%;
-    font-size: 0.875rem;
-    border: none;
-    background-color: var(--color-primary); 
-    color: var(--neutral-100);
-}
-/* trước hover */
-.nav-item {
-    padding: 14px 10px 14px 10px;
-    transition: all 0.3s;
-}
-/* Sau hover */
-.nav-item:hover {
-    color: var(--neutral-100);
-}
-/* active */
-.nav-item.active {
-    color: var(--neutral-100);
-}
-header.nav-fixed {
-    padding: 0;
+/* Sau khi croll */
+header.header-scrolled {
+    padding: 0px;
     background-color: var(--neutral-100);
     height: 80px;
+    transform: scaleY(0.95);
     border-bottom: none;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 }
 
-header.nav-fixed .brand-title,
-header.nav-fixed .brand-subtitle {
-    color: var(--neutral-700);
+header.header-scrolled nav {
+    background-color: var(--neutral-100);
 }
 
-header.nav-fixed .nav-item {
-    color: var(--neutral-800);
+.boder {
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
 }
-
-header.nav-fixed .nav-item.active {
+.brand-head i.fa {
+    font-size: 30px;
+    font-weight: 600;
     color: var(--color-primary);
 }
+.brand-head .brand-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.navbar-brand .brand-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--neutral-600);
+    padding-left: 55px;
+    margin-top: -8px;
+}
+/* navbar */
+.navbar-nav .nav-item {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 0 10px;
+    color: var(--neutral-600);  
+}
+/* trước khi có trạng thái */
+.nav-item .nav-link {
+    color: var(--neutral-600);
+}
+/* Sau khi có trạng thái hover*/
+.nav-item .nav-link:hover {
+    color: var(--neutral-100);
+}
+.header-search .btn-material {
+    text-align: center;
+    border: 1px solid transparent;
+    background: transparent;
+    padding-left: 48px;
+}
+.header-search .control {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background: #009f4d;
+}
+.control .icon-material-search {
+    font-size: 16px;
+    font-weight: 600;
+        line-height: 45px;
+        color: var(--neutral-100);
+    text-align: center;
 
-header.nav-fixed .nav-search {
-    background-color: var(--color-primary);
 }
