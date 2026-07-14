@@ -22,7 +22,7 @@
  .brand-subtitle-footer {
     font-size: 14px;
     font-weight: 600;
-    color: var(--neutral-600);
+    color: #97a1a9;
     padding-left: 55px;
     margin-top: -8px;
 }
@@ -34,7 +34,7 @@
 .content-footer-body .brand-content-footer {
     font-size: 18px;
     line-height: 28px;
-    color: var(--neutral-600);
+    color: #97a1a9;
 }
 .social-meida {
     display: flex;
@@ -42,7 +42,9 @@
     align-items: center;
     gap: 5px;
     padding: 0;
+    
 }
+/* trước khi hover */
 .social-meida .item-icon {
     width: 56px;
     height: 56px;
@@ -50,11 +52,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    transition: all;
 }
 
 .social-meida .item-icon i {
     font-size: 16px;
-    color: var(--neutral-600);
+    color: #97a1a9;
+    transition: all 0.3s ease;
+}
+.social-meida .item-icon i:hover {
+    font-size: 16px;
+    color: var(--neutral-100);
 }
 .content-footer-head .title{
     font-size: 22px;
@@ -64,10 +72,10 @@
         color: var(--neutral-100);
 }
 .content-footer-head .item{
-    color: var(--neutral-600);
+    color: #97a1a9;
     font-size: 16px;
     line-height: 28px;
-    gap: 8px
+    gap: 8px;
 }
 
 .content-footer-head {
@@ -88,4 +96,12 @@
 }
 .content-copy .brand {
     color: var(--color-primary);
+}
+
+.item .value {
+    transition: all 0.3s ease;
+}
+
+.item .value:hover {
+    color: var(--neutral-100);
 }
