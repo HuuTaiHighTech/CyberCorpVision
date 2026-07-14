@@ -10,9 +10,25 @@
     item.classList.toggle('active', href === currentPath);
   });
 
-  window.addEventListener('scroll', () => {
+  const updateHeaderScroll = () => {
     const isScrolled = window.scrollY > 50;
     header.classList.toggle('header-scrolled', isScrolled);
     document.body.classList.toggle('header-scrolled', isScrolled);
-  });
+  };
+
+  const navbarCollapse = document.getElementById('navbarSupportedContent');
+  const headerSearch = document.querySelector('.header-search');
+
+  if (navbarCollapse && headerSearch) {
+    navbarCollapse.addEventListener('shown.bs.collapse', () => {
+      headerSearch.classList.add('is-show');
+    });
+
+    navbarCollapse.addEventListener('hidden.bs.collapse', () => {
+      headerSearch.classList.remove('is-show');
+    });
+  }
+
+  window.addEventListener('scroll', updateHeaderScroll);
+  updateHeaderScroll();
 }
