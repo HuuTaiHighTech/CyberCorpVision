@@ -1,4 +1,14 @@
-footer .btn {
-    
-    border: 1px solid white;
+.cta {
+    padding: 15px 50px;
+    color: white;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600px;
+    background-color: #008030;
+    border: transparent;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+.cta:hover {
+    background-color: #00732c;
 }
