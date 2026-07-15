@@ -79,11 +79,15 @@
     border-radius: 0 4px 4px 0;
     background: var(--color-primary);
     /* Viền */
-    border: 1px solid #009f4d;
+    
 }
 /* sau khi hover */
 .content-contact .btn:hover {
     background: var(--color-primary-hover);
+}
+.content-contact .btn:focus {
+    color: var(--neutral-100);
+    border: 2px solid #009f4d;
 }
 /* CTA backtotop */
 .backtotop {
@@ -114,4 +118,7 @@
 .copy-right {
     border-top: 1px solid rgba(231, 231, 231, 0.18); 
     padding: 20px 0;
+}
+.content-copy .brand:hover {
+    color: var(--neutral-100);
 }
