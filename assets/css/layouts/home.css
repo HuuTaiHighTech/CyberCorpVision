@@ -78,6 +78,7 @@
     padding: 16px 20px;
     border-radius: 0 4px 4px 0;
     background: var(--color-primary);
+     border: 2px solid transparent;
     /* Viền */
     
 }
@@ -87,7 +88,7 @@
 }
 .content-contact .btn:focus {
     color: var(--neutral-100);
-    border: 2px solid #009f4d;
+    border-color: #009f4d;
 }
 /* CTA backtotop */
 .backtotop {
