@@ -40,7 +40,7 @@
 }
 
 .banner-slide.active {
-  position: relative;
+  /* position: relative; */
   opacity: 1;
   visibility: visible;
 }
@@ -118,13 +118,51 @@
 }
 
 @keyframes dropBackDown {
-  0%   { opacity: 0; transform: translate3d(0, -100%, 0); }
-  60%  { opacity: 1; transform: translate3d(0, 20px, 0); }
-  100% { opacity: 1; transform: translate3d(0, 0, 0); }
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    -ms-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
 
-.drop-back {
-  animation: dropBackDown 0.6s ease-in forwards;
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    -ms-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    -ms-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    -ms-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
 }
 /* menu delay */
 :root {
@@ -152,20 +190,16 @@
   animation-fill-mode: both;
   animation-duration: calc(var(--animate-duration) * 2);
 }
+
+/* Khai báo hiệu ứng */
 .animate__dropBackDown {
   animation-name: dropBackDown;
 }
-.animate__delay-3s {
-  animation-delay: calc(var(--animate-delay) * 3);
+.animate__fadeInUp {
+  animation-name: fadeInUp;
 }
-.animate__delay-1s {
-  animation-delay: var(--animate-delay);
-}
-.animate__delay-2s {
-  animation-delay: calc(var(--animate-delay) * 2);
-}
-.animate__delay-4s {
-  animation-delay: calc(var(--animate-delay) * 4);
+.animate__flipInX {
+  animation-name: flipInX;
 }
 
 .shape {

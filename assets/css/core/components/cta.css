@@ -7,7 +7,7 @@
     background-color: #008030;
     border: transparent;
     border-radius: 8px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 .cta:hover {
     background-color: #00732c;

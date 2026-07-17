@@ -24,5 +24,6 @@ export function initBackToTop() {
     window.addEventListener('scroll', toggleVisibility);
     backToTopEl.addEventListener('click', scrollToTop);
 
-    toggleVisibility(); // set trạng thái đúng ngay khi load trang
+     // set trạng thái đúng ngay khi load trang
+     toggleVisibility();
 }
