@@ -1,17 +1,10 @@
 /* lúc nào cx dùng */
-body {
-    margin: 0;
-    padding-top: 100px;
-    transition: padding-top 0.4s ease 0s;
-}
+
 
 body.header-scrolled {
     padding-top: 80px !important;
 }
 
-header.main-header + * {
-    margin-top: 0;
-}
 
 .fixed-top {
     position: fixed;
@@ -35,7 +28,7 @@ header.main-header {
 }
 
 header.main-header nav {
-    background-color: pink;
+    background-color: transparent;
     transition: background-color 0.4s ease 0s, padding 0.4s ease 0s;
 }
 

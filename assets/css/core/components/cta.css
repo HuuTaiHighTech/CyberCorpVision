@@ -3,10 +3,10 @@
     color: white;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 600px;
+    font-weight: 600;
     background-color: #008030;
     border: transparent;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: transform 0.3s ease;
 }
 .cta:hover {

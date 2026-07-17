@@ -1,94 +1,248 @@
-/* Layout và làm đẹp của trang home */
-/* .cta .cta-prev {
-    right: 95px;
+/* section banner */
+.banner {
+  position: relative;
+  height: auto;
+  
+  overflow: hidden;
+  /* padding-top: 80px;
+  padding-bottom: 200px; */
 }
-.cta .cta-next {
-    right: 25px;
+/* Nội dung neo theo cha gần nhất
+/* Tính kích thước thật của điểm neo */
+.banner-slider {
+  position: relative;
+  min-height: 700px;
 }
- .cta {
-    position: relative;
+.banner-content {
+    max-width: 800px;
+    height: auto;
+}
+/* 1 banner slide kéo ra khỏi luồng, chồng lên cùng 1 vị trí
+2 ép các slider phủ kín bằng kích thước cha
+3 ẩn hoàn toàn trong suốt
+4 ẩn các thao tác chuột/ tab
+5 để khi đổi opacity, nó fade mượt có bị giật */
+.banner-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
 
- }
-.cta .cta-arrow {
+  /* xử lý ảnh */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-slide.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+/* Nút prev/next nằm đè cố định trên toàn section, không thuộc riêng slide nào */
+.hero-overlay {
+   position: absolute;
+  inset: 0;
+  background: rgba(29, 42, 55, 0.7);
+  z-index: 1;
+}
+.container.is-content {
+  position: relative;  /* bắt buộc — để z-index có tác dụng */
+  z-index: 2;            /* cao hơn .hero-overlay (z-index: 1) */
+}
+.container.is-arrows {
+  position: relative;
+  z-index: 20;
+}
+.slick-prev {
+  right: 95px;
+  transform: translateY(-50%);
+}
+.slick-next {
+  right: 25px;
+  transform: translateY(-50%);
+}
+.slick-arrow {
     position: absolute;
+    bottom: 50px;
+    font-size: 0;
+    background: var(--neutral-100);
     width: 50px;
     height: 50px;
-    bottom: 50px;
+    z-index: 12;
+    outline: none;
     border-radius: 100%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
     border: 1px solid transparent;
-    background: white;
-    z-index: 12;
-    outline: none;
-} */
+}
+.slick-arrow{
+    font-size: 16px;
+    color: #151421;
+    text-align: center;
+    line-height: 46px;
+
+}
+.banner-content .title{
+    font-size: 65px;
+    line-height: 1.1;
+    color: var(--neutral-100);
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.banner-content .content {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 600px;
+    color: white;
+    letter-spacing: 0.010em;
+    opacity: .9;
+    margin-bottom: 24px;
+} 
+.slide1 { background-image: url("../../../public/img/home/banner-bg1.jpg"); }
+.slide2 { background-image: url("../../../public/img/home/banner-bg2.jpg"); }
+.slide3 { background-image: url("../../../public/img/home/banner-bg3.jpg"); }
+.slide4 { background-image: url("../../../public/img/home/banner-bg4.jpg"); }
+.shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  line-height: 0;
+  pointer-events: none;
+}
+
+@keyframes dropBackDown {
+  0%   { opacity: 0; transform: translate3d(0, -100%, 0); }
+  60%  { opacity: 1; transform: translate3d(0, 20px, 0); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+.drop-back {
+  animation: dropBackDown 0.6s ease-in forwards;
+}
+/* menu delay */
+:root {
+  --animate-delay: 1s;
+  --animate-duration: 1s;
+}
+.animate__delay-1s {
+  animation-delay: var(--animate-delay);
+}
+.animate__delay-2s {
+  animation-delay: calc(var(--animate-delay) * 2);
+}
+.animate__delay-3s {
+  animation-delay: calc(var(--animate-delay) * 3);
+}
+.animate__delay-4s {
+  animation-delay: calc(var(--animate-delay) * 4);
+}
+.shape path {
+  fill: white;
+}
+
+/* menu run now */
+.animate__animated {
+  animation-fill-mode: both;
+  animation-duration: calc(var(--animate-duration) * 2);
+}
+.animate__dropBackDown {
+  animation-name: dropBackDown;
+}
+.animate__delay-3s {
+  animation-delay: calc(var(--animate-delay) * 3);
+}
+.animate__delay-1s {
+  animation-delay: var(--animate-delay);
+}
+.animate__delay-2s {
+  animation-delay: calc(var(--animate-delay) * 2);
+}
+.animate__delay-4s {
+  animation-delay: calc(var(--animate-delay) * 4);
+}
+
+.shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.shape path {
+  fill: white;
+}
 
 .my-contact-project {
-    background-image: url(../../../../public/img/home/contact-bg.png);
-    background-color: #151421;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(../../../../public/img/home/contact-bg.png);
+  background-color: #151421;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .contact-footer-head {
-    max-width: 700px;
-    margin: auto;
+  max-width: 700px;
+  margin: auto;
 }
-.my-contact-project .title{
-    font-size: 35px;
-    line-height: 45px;
-    font-weight: 700;
-    color: var(--neutral-100);
+.my-contact-project .title {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+  color: var(--neutral-100);
 }
 .my-contact-project .subtitle {
-    font-size: 17px;
-    line-height: 27px;
-    opacity: .8;
-    color: var(--neutral-600);
+  font-size: 17px;
+  line-height: 27px;
+  opacity: 0.8;
+  color: var(--neutral-600);
 }
 
 .content-contact .fa-solid {
-    color: #999;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 35px;
-    border-radius: 4px 0 0 4px;
-    background-color: rgba(0, 0, 0, 0.25);
-    /* viền */
-    border: 0.15px solid #ffffff26;
-    }
-.content-contact  .myInput {
-    padding: 14px 20px;
-    font-size: 16px;
-    line-height: 28px;
-    outline: none;
-    width: 100%;
-    background: white;
-    border-radius: 0;
-    color: #999;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 0.15px solid #ffffff26;
-
+  color: #999;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 35px;
+  border-radius: 4px 0 0 4px;
+  background-color: rgba(0, 0, 0, 0.25);
+  /* viền */
+  border: 0.15px solid #ffffff26;
+}
+.content-contact .myInput {
+  padding: 14px 20px;
+  font-size: 16px;
+  line-height: 28px;
+  outline: none;
+  width: 100%;
+  background: white;
+  border-radius: 0;
+  color: #999;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 0.15px solid #ffffff26;
 }
 /* trước khi hover */
 .content-contact .btn {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--neutral-100);
-    padding: 16px 20px;
-    border-radius: 0 4px 4px 0;
-    background: var(--color-primary);
-     border: 2px solid transparent;
-    /* Viền */
-    
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--neutral-100);
+  padding: 16px 20px;
+  border-radius: 0 4px 4px 0;
+  background: var(--color-primary);
+  border: 2px solid transparent;
+  /* Viền */
 }
 /* sau khi hover */
 .content-contact .btn:hover {
-    background: var(--color-primary-hover);
+  background: var(--color-primary-hover);
 }
 .content-contact .btn:focus {
-    color: var(--neutral-100);
-    border-color: #009f4d;
+  color: var(--neutral-100);
+  border-color: #009f4d;
 }
 /* CTA backtotop */
 .backtotop {
@@ -106,20 +260,24 @@
   opacity: 0;
   background: #008030;
   border-radius: 50%;
-  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  transition:
+    opacity 0.3s ease,
+    visibility 0s linear 0.3s;
 }
 .cd-top--is-visible {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.3s ease, visibility 0s linear 0s;
+  transition:
+    opacity 0.3s ease,
+    visibility 0s linear 0s;
 }
 .cd-top--fade-out {
   opacity: 1;
 }
 .copy-right {
-    border-top: 1px solid rgba(231, 231, 231, 0.18); 
-    padding: 20px 0;
+  border-top: 1px solid rgba(231, 231, 231, 0.18);
+  padding: 20px 0;
 }
 .content-copy .brand:hover {
-    color: var(--neutral-100);
+  color: var(--neutral-100);
 }
