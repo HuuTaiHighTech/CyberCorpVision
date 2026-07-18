@@ -316,3 +316,57 @@
 .content-copy .brand:hover {
   color: var(--neutral-100);
 }
+
+
+
+/* Section about us */
+/* left */
+.kicker {
+      font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #7e7d7d;
+    display: block;
+}
+.title {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.service-link a{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+}
+.service-link p {
+  color: #3f3a64;
+  font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+.service-link i{
+  color: #009f4d;
+}
+
+/* right */
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.HomeAboutImages_content {
+    flex: 1; /* thay vì flex: 0 0 50% */
+    box-sizing: border-box;
+    min-width: 0; /* tránh item bị tràn khi có ảnh lớn bên trong */
+}
+.HomeAboutImages_content img {
+  position: relative;
+  top: -80px;
+}
+.radius-image {
+    border-radius: 8px;
+}
