@@ -320,6 +320,10 @@
 
 
 /* Section about us */
+.my-aboutus {
+  min-height: auto;
+  min-width: 800px;
+}
 /* left */
 .kicker {
       font-size: 14px;
@@ -363,10 +367,14 @@
     box-sizing: border-box;
     min-width: 0; /* tránh item bị tràn khi có ảnh lớn bên trong */
 }
-.HomeAboutImages_content img {
+
+.HomeAboutImages_content .img {
   position: relative;
-  top: -80px;
+  top: -40px;
 }
+
+
 .radius-image {
     border-radius: 8px;
 }
+ 
