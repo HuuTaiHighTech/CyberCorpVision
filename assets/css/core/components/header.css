@@ -97,10 +97,14 @@ header.header-scrolled nav .nav-link {
 header.header-scrolled .nav-link.active {
     color: var(--color-primary);
 }
-/* Sau khi có trạng thái hover*/
-/* .nav-item .nav-link:hover {
+.nav-item .nav-link:hover {
+    color: var(--neutral-100); /* hoặc màu sáng hơn 1 chút để phân biệt active */
+}
+
+/* Hover khi ĐÃ cuộn (nền trắng, chữ tối) */
+header.header-scrolled .nav-link:hover {
     color: var(--color-primary);
-} */
+}
  .btn-material {
     text-align: center;
     border: 1px solid transparent;
