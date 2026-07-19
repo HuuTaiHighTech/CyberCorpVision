@@ -322,10 +322,10 @@
 /* Section about us */
 .my-aboutus {
   min-height: auto;
-  min-width: 800px;
+  /* min-width: 800px; */
 }
 /* left */
-.kicker {
+.about-us .kicker {
       font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -334,12 +334,21 @@
     color: #7e7d7d;
     display: block;
 }
-.title {
+.about-us .title {
     font-size: 35px;
     line-height: 45px;
     font-weight: 700;
 }
-
+.about-us .content {
+  font-size: 17px;
+    line-height: 27px;
+  opacity: .8;
+}
+.service-list .service-link a {
+  font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
 .service-link a{
   display: flex;
   align-items: center;
@@ -377,4 +386,16 @@
 .radius-image {
     border-radius: 8px;
 }
- 
+/* Từ 991px trở xuống (dưới desktop) */
+@media (max-width: 991px) {
+  .title {
+    font-size: 28px;
+  }
+}
+
+/* Từ 767px trở xuống (mobile) */
+@media (max-width: 767px) {
+  .title {
+    font-size: 20px;
+  }
+}
