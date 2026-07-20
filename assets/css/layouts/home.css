@@ -2,7 +2,7 @@
 .banner {
   position: relative;
   height: auto;
-  
+
   overflow: hidden;
   /* padding-top: 80px;
   padding-bottom: 200px; */
@@ -14,8 +14,8 @@
   min-height: 700px;
 }
 .banner-content {
-    max-width: 800px;
-    height: auto;
+  max-width: 800px;
+  height: auto;
 }
 /* 1 banner slide kéo ra khỏi luồng, chồng lên cùng 1 vị trí
 2 ép các slider phủ kín bằng kích thước cha
@@ -46,14 +46,14 @@
 }
 /* Nút prev/next nằm đè cố định trên toàn section, không thuộc riêng slide nào */
 .hero-overlay {
-   position: absolute;
+  position: absolute;
   inset: 0;
   background: rgba(29, 42, 55, 0.7);
   z-index: 1;
 }
 .container.is-content {
-  position: relative;  /* bắt buộc — để z-index có tác dụng */
-  z-index: 2;            /* cao hơn .hero-overlay (z-index: 1) */
+  position: relative; /* bắt buộc — để z-index có tác dụng */
+  z-index: 2; /* cao hơn .hero-overlay (z-index: 1) */
 }
 .container.is-arrows {
   position: relative;
@@ -68,46 +68,52 @@
   transform: translateY(-50%);
 }
 .slick-arrow {
-    position: absolute;
-    bottom: 50px;
-    font-size: 0;
-    background: var(--neutral-100);
-    width: 50px;
-    height: 50px;
-    z-index: 12;
-    outline: none;
-    border-radius: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
-    border: 1px solid transparent;
+  position: absolute;
+  bottom: 50px;
+  font-size: 0;
+  background: var(--neutral-100);
+  width: 50px;
+  height: 50px;
+  z-index: 12;
+  outline: none;
+  border-radius: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+  border: 1px solid transparent;
 }
-.slick-arrow{
-    font-size: 16px;
-    color: #151421;
-    text-align: center;
-    line-height: 46px;
-
+.slick-arrow {
+  font-size: 16px;
+  color: #151421;
+  text-align: center;
+  line-height: 46px;
 }
-.banner-content .title{
-    font-size: 65px;
-    line-height: 1.1;
-    color: var(--neutral-100);
-    font-weight: 600;
-    margin-bottom: 24px;
+.banner-content .title {
+  font-size: 65px;
+  line-height: 1.1;
+  color: var(--neutral-100);
+  font-weight: 600;
+  margin-bottom: 24px;
 }
 .banner-content .content {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 24px;
-    max-width: 600px;
-    color: white;
-    letter-spacing: 0.010em;
-    opacity: .9;
-    
-} 
-.slide1 { background-image: url("../../../public/img/home/banner-bg1.jpg"); }
-.slide2 { background-image: url("../../../public/img/home/banner-bg2.jpg"); }
-.slide3 { background-image: url("../../../public/img/home/banner-bg3.jpg"); }
-.slide4 { background-image: url("../../../public/img/home/banner-bg4.jpg"); }
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 24px;
+  max-width: 600px;
+  color: white;
+  letter-spacing: 0.01em;
+  opacity: 0.9;
+}
+.slide1 {
+  background-image: url("../../../public/img/home/banner-bg1.jpg");
+}
+.slide2 {
+  background-image: url("../../../public/img/home/banner-bg2.jpg");
+}
+.slide3 {
+  background-image: url("../../../public/img/home/banner-bg3.jpg");
+}
+.slide4 {
+  background-image: url("../../../public/img/home/banner-bg4.jpg");
+}
 .shape {
   position: absolute;
   bottom: 0;
@@ -247,7 +253,6 @@
   background-color: rgba(0, 0, 0, 0.25);
   /* viền */
   border: 0.15px solid #ffffff26;
-  
 }
 .content-contact .myInput {
   padding: 14px 20px;
@@ -318,8 +323,6 @@
   color: var(--neutral-100);
 }
 
-
-
 /* Section about us */
 .my-aboutus {
   min-height: auto;
@@ -327,30 +330,30 @@
 }
 /* left */
 .about-us .kicker {
-      font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 30px;
-    letter-spacing: 1px;
-    color: #7e7d7d;
-    display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #7e7d7d;
+  display: block;
 }
 .about-us .title {
-    font-size: 35px;
-    line-height: 45px;
-    font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
 }
 .about-us .content {
   font-size: 17px;
-    line-height: 27px;
-  opacity: .8;
+  line-height: 27px;
+  opacity: 0.8;
 }
 .service-list .service-link a {
   font-size: 18px;
-    line-height: 28px;
-    font-weight: 600;
+  line-height: 28px;
+  font-weight: 600;
 }
-.service-link a{
+.service-link a {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -359,23 +362,23 @@
 .service-link p {
   color: #3f3a64;
   font-size: 18px;
-    line-height: 28px;
-    font-weight: 600;
+  line-height: 28px;
+  font-weight: 600;
 }
-.service-link i{
+.service-link i {
   color: #009f4d;
 }
 
 /* right */
 .right {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 .HomeAboutImages_content {
-    flex: 1; /* thay vì flex: 0 0 50% */
-    box-sizing: border-box;
-    min-width: 0; /* tránh item bị tràn khi có ảnh lớn bên trong */
+  flex: 1; /* thay vì flex: 0 0 50% */
+  box-sizing: border-box;
+  min-width: 0; /* tránh item bị tràn khi có ảnh lớn bên trong */
 }
 
 .HomeAboutImages_content .img {
@@ -383,9 +386,8 @@
   top: -40px;
 }
 
-
 .radius-image {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 /* Từ 991px trở xuống (dưới desktop) */
 /* @media (max-width: 991px) {
@@ -406,22 +408,22 @@
 /* section challenges */
 .challenges .kicker {
   font-size: 14px;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: 1px;
-    color: #7e7d7d;
-    display: block
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #7e7d7d;
+  display: block;
 }
 .challenges .title {
   font-size: 35px;
-    line-height: 45px;
-    font-weight: 700;
+  line-height: 45px;
+  font-weight: 700;
 }
 
 .challenges .content {
   font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 24px;
+  line-height: 30px;
+  margin-bottom: 24px;
 }
 .grids-1 {
   display: flex;
@@ -435,23 +437,23 @@
 }
 .grids-1:hover {
   transform: translateY(-0.25rem);
-   box-shadow:
+  box-shadow:
     0 2px 4px rgba(46, 41, 51, 0.08),
     0 5px 10px rgba(71, 63, 79, 0.16);
-    transition: 0.3s ease;
+  transition: 0.3s ease;
 }
-.grids-1 a{
+.grids-1 a {
   transition: all 0.3s ease;
 }
 .grids-1 a:hover {
   color: var(--color-primary-hover);
 }
-.grids-1 img{
+.grids-1 img {
   display: block;
   max-width: 65px;
   margin: 0 auto;
 }
-.grids-1 span{
+.grids-1 span {
   display: block;
   margin-top: 25px;
 }
@@ -460,3 +462,101 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
 } */
+
+/* section services */
+.service-content .card {
+  border: none;
+}
+.card-body {
+  position: relative;
+  padding: 0 20px;
+}
+.btn-style1 {
+  padding: 8px 35px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #3f3a64;
+  border-radius: 8px;
+  /* border: 1px solid red; */
+}
+/* trước hover */
+.service-content .card .title {
+  transition: all 0.3s ease;
+}
+/* sau hover */
+.service-content .card:hover .title {
+  color: var(--color-primary-hover);
+}
+.service-content .btn {
+  transition: all 0.3s ease;
+}
+.service-content .btn:hover {
+  color: var(--color-primary-hover);
+}
+.card-body .title {
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #3f3a64;
+  text-align: center;
+  padding: 12px 35px;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+  transform: translateY(-25px);
+  background-color: white;
+}
+/* section gallerry  */
+/* trước khi hover */
+.item-gallery {
+  position: relative;
+  overflow: hidden;
+}
+
+.item-gallery .overlay__hover {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(29, 42, 55, 0.7);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.item-gallery .hover-content {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  padding: 46px 50px;
+  box-sizing: border-box;
+  color: white;
+  z-index: 2;
+  transition: bottom 0.3s ease;
+}
+
+.item-gallery img {
+  display: block;
+  width: 100%;
+}
+
+/* Khi hover */
+.item-gallery:hover .overlay__hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.item-gallery:hover .hover-content {
+  bottom: 0;
+}
+.hover-content .title {
+display: block;
+
+}
+.hover-content .content {
+display: block;
+
+}
