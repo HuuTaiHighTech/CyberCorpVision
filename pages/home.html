@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -475,67 +484,268 @@
       </div>
     </section>
     <section class="gallery py-5">
-      <div class="container text-center py-5 my-galler">
+      <div class="container text-center py-5 my-gallery">
         <div class="content-gallery">
-         
-            <span class="kicker">Our Gallery</span>
-            <h2>Successful projects we've done</h2>
-          
+          <span class="kicker">Our Gallery</span>
+          <h2>Successful projects we've done</h2>
+
           <div class="row">
-            <div class="col my-3 item-gallery">
-              <img
-                src="../public/img/home/gallery1.jpg"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <span class="overlay__hover">
-                
-              </span>
-              <div class="hover-content d-flex flex-column align-items-start mt-2">
-                <span class="title">
-                  Project 1
-                </span>
-                <span class="content">
-                  Quisque ut lectus, eros et, sed commodo risus.
-                </span>
-              </div>
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 item-gallery"
+            >
+              <a
+                href="../public/img/home/gallery1.jpg"
+                data-fancybox="gallery"
+                data-caption="Project 1"
+              >
+                <img
+                  src="../public/img/home/gallery1.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <span class="overlay__hover"> </span>
+                <div
+                  class="hover-content d-flex flex-column align-items-start mt-2"
+                >
+                  <span class="title"> Project 1 </span>
+                  <span class="content">
+                    Quisque ut lectus, eros et, sed commodo risus.
+                  </span>
+                </div>
+              </a>
             </div>
-            <div class="col my-3">
-              <img
-                src="../public/img/home/gallery2.jpg"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 item-gallery"
+            >
+              <a
+                href="../public/img/home/gallery2.jpg"
+                data-fancybox="gallery"
+                data-caption="Project 2"
+              >
+                <img
+                  src="../public/img/home/gallery2.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <span class="overlay__hover"> </span>
+                <div
+                  class="hover-content d-flex flex-column align-items-start mt-2"
+                >
+                  <span class="title"> Project 2 </span>
+                  <span class="content">
+                    Quisque ut lectus, eros et, sed commodo risus.
+                  </span>
+                </div>
+              </a>
             </div>
-            <div class="col my-3">
-              <img
-                src="../public/img/home/gallery3.jpg"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 item-gallery"
+            >
+              <a
+                href="../public/img/home/gallery3.jpg"
+                data-fancybox="gallery"
+                data-caption="Project 3"
+              >
+                <img
+                  src="../public/img/home/gallery3.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <span class="overlay__hover"> </span>
+                <div
+                  class="hover-content d-flex flex-column align-items-start mt-2"
+                >
+                  <span class="title"> Project 3 </span>
+                  <span class="content">
+                    Quisque ut lectus, eros et, sed commodo risus.
+                  </span>
+                </div>
+              </a>
             </div>
           </div>
           <div class="row">
-            <div class="col my-3">
-              <img
-                src="../public/img/home/gallery4.jpg"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 item-gallery"
+            >
+              <a
+                href="../public/img/home/gallery4.jpg"
+                data-fancybox="gallery"
+                data-caption="Project 4"
+              >
+                <img
+                  src="../public/img/home/gallery4.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <span class="overlay__hover"> </span>
+                <div
+                  class="hover-content d-flex flex-column align-items-start mt-2"
+                >
+                  <span class="title"> Project 4 </span>
+                  <span class="content">
+                    Quisque ut lectus, eros et, sed commodo risus.
+                  </span>
+                </div>
+              </a>
             </div>
-            <div class="col my-3">
-              <img
-                src="../public/img/home/gallery5.jpg"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 item-gallery"
+            >
+              <a
+                href="../public/img/home/gallery5.jpg"
+                data-fancybox="gallery"
+                data-caption="Project 5"
+              >
+                <img
+                  src="../public/img/home/gallery5.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <span class="overlay__hover"> </span>
+                <div
+                  class="hover-content d-flex flex-column align-items-start mt-2"
+                >
+                  <span class="title"> Project 5 </span>
+                  <span class="content">
+                    Quisque ut lectus, eros et, sed commodo risus.
+                  </span>
+                </div>
+              </a>
             </div>
-            <div class="col my-3">
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 item-gallery"
+            >
+              <a
+                href="../public/img/home/gallery6.jpg"
+                data-fancybox="gallery"
+                data-caption="Project 6"
+              >
+                <img
+                  src="../public/img/home/gallery6.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <span class="overlay__hover"> </span>
+                <div
+                  class="hover-content d-flex flex-column align-items-start mt-2"
+                >
+                  <span class="title"> Project 6 </span>
+                  <span class="content">
+                    Quisque ut lectus, eros et, sed commodo risus.
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row company-logo pt-5 mt-5 justify-content-center">
+          <div class="col-lg-2 col-md-3 col-4">
+            <img
+              src="../public/img/home/partner1.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-2 col-md-3 col-4">
+            <img
+              src="../public/img/home/partner2.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-2 col-md-3 col-4">
+            <img
+              src="../public/img/home/partner3.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-2 col-md-3 col-4">
+            <img
+              src="../public/img/home/partner4.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-2 col-md-3 col-4">
+            <img
+              src="../public/img/home/partner5.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials py-5">
+      <div class="container py-5 text-center">
+        <div class="testimonial-content">
+          <span class="kicker">Happy Clients Feedback</span>
+          <h2 class="title mb-5">Reviews and Testimonials</h2>
+
+          <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-slide">
+              <p class="content mb-4">
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. adipisicing elit. Esse architecto est ea sunt
+                eligendi cum?
+              </p>
               <img
-                src="../public/img/home/gallery6.jpg"
-                class="card-img-top img-fluid"
-                alt="..."
+                src="../public/img/home/testimonial1.jpg"
+                alt=""
+                class="testimonial-avatar"
               />
+              <span class="d-block fw-bold">John wilson</span>
+              <span class="d-block">Student</span>
+            </div>
+
+            <div class="testimonial-slide">
+              <p class="content mb-4">
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. adipisicing elit. Esse architecto est ea sunt
+                eligendi cum?
+              </p>
+              <img
+                src="../public/img/home/testimonial2.jpg"
+                alt=""
+                class="testimonial-avatar"
+              />
+              <span class="d-block fw-bold">John wilson</span>
+              <span class="d-block">Student</span>
+            </div>
+
+            <div class="testimonial-slide">
+              <p class="content mb-4">
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. adipisicing elit. Esse architecto est ea sunt
+                eligendi cum?
+              </p>
+              <img
+                src="../public/img/home/testimonial3.jpg"
+                alt=""
+                class="testimonial-avatar"
+              />
+              <span class="d-block fw-bold">John wilson</span>
+              <span class="d-block">Student</span>
+            </div>
+
+            <div class="testimonial-slide">
+              <p class="content mb-4">
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. adipisicing elit. Esse architecto est ea sunt
+                eligendi cum?
+              </p>
+              <img
+                src="../public/img/home/testimonial4.jpg"
+                alt=""
+                class="testimonial-avatar"
+              />
+              <span class="d-block fw-bold">John wilson</span>
+              <span class="d-block">Student</span>
             </div>
           </div>
         </div>
@@ -686,7 +896,7 @@
     >
       <i class="fa fa-chevron-up"></i>
     </a>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- jquery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -702,6 +912,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>

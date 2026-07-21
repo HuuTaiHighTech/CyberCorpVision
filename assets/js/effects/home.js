@@ -98,9 +98,23 @@ function initDropDownAnimation(selector) {
         }, { once: true });
     });
 }
+function initTestimonial() {
+  if (typeof $ === 'undefined' || !$.fn.owlCarousel) return; // đảm bảo jQuery + Owl đã load
 
+  $('.testimonial-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    dots: true,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    smartSpeed: 600
+  });
+}
 // Khởi tạo trang home
 export function initHome() {
     initHeroCarousel();
     initDropDownAnimation('.title, .content, .cta');
+    initTestimonial();
 }
