@@ -332,7 +332,6 @@
 .about-us .kicker {
   font-size: 14px;
   font-weight: 600;
-  text-transform: uppercase;
   line-height: 30px;
   letter-spacing: 1px;
   color: #7e7d7d;
@@ -342,16 +341,19 @@
   font-size: 35px;
   line-height: 45px;
   font-weight: 700;
+  color: #4c476e;
 }
 .about-us .content {
   font-size: 17px;
   line-height: 27px;
   opacity: 0.8;
+  color: #9d9d9d;
 }
 .service-list .service-link a {
   font-size: 18px;
   line-height: 28px;
   font-weight: 600;
+  color: #4c476e;
 }
 .service-link a {
   display: flex;
@@ -418,12 +420,14 @@
   font-size: 35px;
   line-height: 45px;
   font-weight: 700;
+  color: #3f3a64;
 }
 
 .challenges .content {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 24px;
+  color: #7e7d7d;
 }
 .grids-1 {
   display: flex;
@@ -481,8 +485,18 @@
   /* border: 1px solid red; */
 }
 /* trước hover */
+.service .title {
+  color: #3f3a64;
+  font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+}
 .service-content .card .title {
   transition: all 0.3s ease;
+}
+
+.card-body .card-text {
+  color: #858585;
 }
 /* sau hover */
 .service-content .card:hover .title {
@@ -513,6 +527,15 @@
 
 .gallery {
   background-color: #f8f9fa;
+}
+.gallery .kicker{
+  color: #7e7d7d;
+}
+.gallery .title {
+      font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #3f3a64;
 }
 .item-gallery {
   position: relative;
@@ -593,7 +616,6 @@
 .testimonial-content .kicker {
   font-size: 14px;
   font-weight: 600;
-  text-transform: uppercase;
   line-height: 30px;
   letter-spacing: 1px;
   color: #7e7d7d;
@@ -604,6 +626,7 @@
   font-size: 35px;
   line-height: 45px;
   font-weight: 700;
+  color: #3f3a64;
 }
 
 .testimonial-content .content {
@@ -675,6 +698,19 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
 
 }
+.card .kicker {
+  font-size: 0.875rem;
+  line-height: 2.14;
+      font-weight: 600;
+          letter-spacing: 0.0714em;
+          color: #7e7d7d;
+}
+.card .title-news {
+  color: #3f3a64;
+  font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+}
 .news-content .card-body .kicker{
   font-weight: 400;
     font-size: 14px;
@@ -697,6 +733,7 @@
       font-weight: 400;
     font-size: 17px;
     color: #999;
+    text-transform: none;
 }
 /* trước hover  */
 .news-header .title-header {
@@ -737,7 +774,7 @@
 }
 .news-footer .date {
   font-size: 15px;
-  
+  color: #858585;
 }
 
 .card {
@@ -767,7 +804,7 @@
 .title-small {
     font-size: 14px;
     font-weight: 600;
-    text-transform: uppercase;
+    
     line-height: 30px;
     letter-spacing: 1px;
     color: #7e7d7d;
