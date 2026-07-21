@@ -1,1 +1,200 @@
-/* layout và làm đẹp của header */
+/* lúc nào cx dùng */
+
+
+body.header-scrolled {
+    padding-top: 80px !important;
+}
+
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+/* trước khi croll main header */
+header.main-header {
+    padding: 0px;
+    overflow: hidden;
+    transition: height 0.4s ease 0s, background-color 0.4s ease 0s, box-shadow 0.4s ease 0s;
+    height: auto;
+    display: grid;
+    align-items: center;
+    z-index: 10;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
+
+header.main-header nav {
+    background-color: transparent;
+    transition: background-color 0.4s ease 0s, padding 0.4s ease 0s;
+}
+
+/* Sau khi croll */
+header.header-scrolled {
+    padding: 0px;
+    height: auto;
+    background-color: var(--neutral-100);
+    border-bottom: none;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+header.header-scrolled nav {
+    background-color: var(--neutral-100);
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+}
+
+header.header-scrolled nav .brand-title {
+    color: var(--neutral-800);
+}
+header.header-scrolled nav .brand-subtitle {
+    color: var(--neutral-800);
+}
+header.header-scrolled nav .nav-link {
+    color: #787592;
+}
+.boder {
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
+.brand-head i.fa {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+.navbar-brand {
+    position: fixed;   /* hoặc sticky */
+    top: 0;
+}
+.brand-head .brand-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.navbar-brand .brand-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--neutral-600);
+    padding-left: 55px;
+    margin-top: -8px;
+}
+/* navbar */
+.navbar-nav .nav-item {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 0 10px;
+    color: var(--neutral-600);  
+}
+/* trước khi có trạng thái */
+.nav-item .nav-link {
+    color: #787592;
+}
+.nav-item .nav-link.active {
+    color: var(--neutral-100);
+}
+header.header-scrolled .nav-link.active {
+    color: var(--color-primary);
+}
+.nav-item .nav-link:hover {
+    color: var(--neutral-100); /* hoặc màu sáng hơn 1 chút để phân biệt active */
+}
+
+/* Hover khi ĐÃ cuộn (nền trắng, chữ tối) */
+header.header-scrolled .nav-link:hover {
+    color: var(--color-primary);
+}
+ .btn-material {
+    text-align: center;
+    border: 1px solid transparent;
+    background: transparent;
+    padding-left: 48px;
+}
+.control {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background: #009f4d;
+    border: 1px solid transparent;
+}
+.control .icon-material-search {
+    font-size: 16px;
+    font-weight: 600;
+        line-height: 45px;
+        color: var(--neutral-100);
+    text-align: center;
+
+}
+/* toggle */
+.navbar-toggler .icon-close {
+  display: none;
+ }
+ .navbar-toggler[aria-expanded="true"] .icon-expand {
+  display: none;
+}
+.navbar-toggler[aria-expanded="true"] .icon-close {
+  display: inline-block;
+}
+
+.header-search.is-show {
+  display: flex;
+}
+
+/* icon collap */
+span.icon-expand {
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 8px;
+    color: var(--neutral-100);
+    border: 1px solid black;
+    background-color: var(--color-primary);
+
+}
+/* icon close */
+span.icon-close {
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 8px;
+    color: var(--neutral-100);
+    border: 1px solid black;
+    background-color: var(--color-primary);
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+     
+}
+.navbar-toggler{
+    
+    position:relative;
+    width:48px;
+    height:48px;
+ border: 1px solid transparent;
+}
+
+
+
+.navbar-toggler span{
+    position: absolute;
+    top: 50%;
+    left: 12px;          /* Nằm bên phải */
+    transform: translateY(-50%);
+}
+.my-collap {
+  position: relative; /* bắt buộc để làm mốc tính top/right cho search */
+}
+.search-mobile-btn {
+  position: absolute;
+  top: 2px;          /* = đúng bằng top của toggler (8px) → 2 nút ngang hàng tuyệt đối */
+  right: 68px;        /* = 48px (width toggler) + 20px (khoảng cách mong muốn giữa 2 nút) */
+}
+
+
+

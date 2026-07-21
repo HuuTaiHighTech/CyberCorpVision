@@ -1,0 +1,66 @@
+.banner-warp {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.banner-slider {
+    height: 100%;
+}
+.banner-slider {
+    /* cha của button pre vs next */
+    position: relative;
+    /* tránh bôi đen khi kéo. */
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+    /* chiếm toàn bộ chiều ngang của banner */
+    display: block;
+    /* khác với content box */
+    box-sizing: border-box; 
+    /* khóa mouse khi kéo IOS*/
+    -webkit-touch-callout: none;
+    /* Cho phép cuộn dọc, giao thao tác vuốt ngang cho Slick */
+    touch-action: pan-y;
+    /* moblie Xóa hiệu ứng màu khi chạm vào phần tử */
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.banner-slider .slick-prev {
+    right: 95px;
+}
+.banner-slider .slick-next {
+    right: 25px;
+}
+/* button prev vs next  */
+.banner-slider .slick-arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    border-radius: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+    border: 1px solid transparent;
+    background: white;
+    z-index: 12;
+    /* đường viền */
+    outline: none;
+}
+
+.slick-list {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    /* position: relative; */
+}
+/* cha của các background */
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -2,6 +2,10 @@
 
 > Tài liệu mô tả cấu trúc thư mục và mục đích của từng thành phần trong dự án **CyberCorpVision**.
 
+## Liên Kết Dành Cho Master
+
+- Google Sheet: [Master xem tại đây](https://docs.google.com/spreadsheets/d/1AGz9J-IoL9h0becnqZgE8enLoDl2Tfjabzjiobe2_Og/edit?gid=0#gid=0)
+
 ---
 
 # Tổng Quan

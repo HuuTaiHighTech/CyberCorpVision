@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -11,75 +20,1009 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- default pages home by file main.css vs js -->
-    <link rel="stylesheet" href="../assets/main.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
+    <header id="site-header" class="fixed-top main-header">
+      <!-- navbar hiển thị màn 992px xuống -->
+      <nav class="navbar navbar-expand-lg navbar-dark stroke boder">
+        <div class="container">
+          <div
+            class="row w-100 flex-nowrap d-flex align-items-center justify-content-between"
+          >
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 logo">
+              <!-- logo -->
+              <a class="navbar-brand d-flex flex-column" href="#">
+                <div class="brand-head ga-1">
+                  <i class="fa fa-align-right brand-icon"></i>
+                  <span class="brand-title">Corp Vision</span>
+                </div>
+                <span class="brand-subtitle">Vision to your Future</span>
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+            </div>
+            <div class="col-6 text-end my-collap">
+              <!-- navbar -->
+              <!-- biến collapse sẽ gọi 
+              phương thức toogle có nhiệm vụ để check đang ở trạng thái true or false
+              Phương thức hide có nhiệm vụ chuyển đổi trạng thái đóng sang mở/ mở sang đóng
+              Phương thức animation có nhiệm vụ sử dụng hiệu ứng chuyển đọng mượt khi đóng mở collapse                   
+              Nếu là false collapse sẽ ẩn nội dung bên trong
+              còn ngược lại nếu là true sẽ hiển thị thông tin ra ngoài 
+                Điểm bắt đầu ảnh hưởng của true  -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="fa icon-expand fa-bars"></span>
+                <span class="fa icon-close fa-times"></span>
+              </button>
+              <!-- icon collapse (navbar-collapse)-> xử lý sự kiện click -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- search mobile -->
+                <div class="btn-material d-lg-none search-mobile-btn">
+                  <button class="control">
+                    <i class="fa fa-search icon-material-search"></i>
+                  </button>
+                </div>
+                <div
+                  class="my-nav d-flex justify-content-center align-items-center gap-3 flex-wrap w-100"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="./home.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./about.html"
+                        >About</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./services.html"
+                        >Services</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 d-none d-lg-flex justify-content-end align-items-center my-search"
+            >
+              <div class="header-search d-flex">
+                <button class="btn-material">
+                  <div class="control">
+                    <i class="fa fa-search icon-material-search"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="banner">
+      <div class="banner-slider">
+        <div class="hero-overlay"></div>
+        <div class="banner-slide slide1 active">
+          <div class="container is-content text-start">
+            <div class="banner-content">
+              <h1
+                class="title animate__animated animate__dropBackDown animate__delay-2s"
+              >
+                Embracing success do our best, need best advice
+              </h1>
+              <p
+                class="content animate__animated animate__dropBackDown animate__delay-1s"
+              >
+                Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+              </p>
+              <button
+                type="button"
+                class="cta animate__animated animate__dropBackDown animate__delay-2s"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner-slide slide2">
+          <div class="container is-content text-start">
+            <div class="banner-content">
+              <h1
+                class="title animate__animated animate__fadeInUp animate__delay-2s"
+              >
+                Digital transformation driven by technology
+              </h1>
+              <p
+                class="content animate__animated animate__fadeInUp animate__delay-1s"
+              >
+                Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+              </p>
+              <button
+                type="button"
+                class="cta animate__animated animate__fadeInUp animate__delay-2s"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner-slide slide3">
+          <div class="container is-content text-start">
+            <div class="banner-content">
+              <h1
+                class="title animate__animated animate__flipInX animate__delay-2s"
+              >
+                We will solve your issues our vision to your future
+              </h1>
+              <p
+                class="content animate__animated animate__dropBackDown animate__delay-1s"
+              >
+                Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+              </p>
+              <button
+                type="button"
+                class="cta animate__animated animate__fadeInUp animate__delay-2s"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner-slide slide4">
+          <div class="container is-content text-start">
+            <div class="banner-content">
+              <h1
+                class="title animate__animated animate__flipInX animate__delay-2s"
+              >
+                For those who believe in leaving a mark
+              </h1>
+              <p
+                class="content animate__animated animate__dropBackDown animate__delay-1s"
+              >
+                Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+              </p>
+              <button
+                type="button"
+                class="cta animate__animated animate__fadeInUp animate__delay-2s"
+              >
+                Contact Now
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+
+      <!-- Chỉ 1 cặp nút duy nhất cho toàn bộ slider -->
+      <div class="container is-arrows">
+        <button
+          class="slick-prev slick-arrow"
+          aria-label="Previous"
+          type="button"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="slick-next slick-arrow" aria-label="Next" type="button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="shape">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+          <path fill-opacity="1">
+            <animate
+              attributeName="d"
+              dur="20000ms"
+              repeatCount="indefinite"
+              values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+            M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"
+            ></animate>
+          </path>
+        </svg>
+      </div>
+    </section>
+    <section class="about-us py-5">
+      <div class="container text-start py-5 my-aboutus">
+        <div class="row align-items-end">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <span class="kicker">About Us</span>
+
+            <h2 class="title">
+              We make the best strategies for you, Enhancing your success
+            </h2>
+
+            <p class="content mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.
+            </p>
+
+            <ul class="service-list mt-4 d-flex gap-2 flex-column">
+              <li class="service-link">
+                <a href="">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>UI/UX Design and Development</p>
+                </a>
+              </li>
+              <li class="service-link">
+                <a href="">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>Branding Design and Identity</p>
+                </a>
+              </li>
+              <li class="service-link">
+                <a href="">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>Mobile App Design and Development</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="HomeAboutImages col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-4 mt-md-5"
+          >
+            <div class="row">
+              <div class="HomeAboutImages_content col-6">
+                <img
+                  src="../public/img/home/aboutus1.jpg"
+                  alt=""
+                  class="radius-image img-fluid"
+                />
+              </div>
+              <div class="col-6 mt-4">
+                <img
+                  src="../public/img/home/aboutus2.jpg"
+                  alt=""
+                  class="radius-image img-fluid mb-md-3 mb-2"
+                />
+                <img
+                  src="../public/img/home/aboutus3.jpg"
+                  alt=""
+                  class="radius-image img-fluid mb-md-3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="challenges py-5">
+      <div class="container py-5 my-challenges">
+        <div class="row">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 left"
+          >
+            <span class="kicker">Every day brings new challenges</span>
+            <h2 class="title mb-4">
+              Creative agency focused on vision, product and people
+            </h2>
+            <p class="content">
+              Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies
+              nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis
+              eros et, sed commodo risus. Nullam sit amet laoreet elit.
+              Suspendisse non init magnaa velit efficitur, dolor eget ex
+              fermentum.
+            </p>
+            <button type="button" class="cta mt-5">Discover More</button>
+          </div>
+          <div
+            class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 feature-grid-right"
+          >
+            <!-- <div class="call-grids">
+              <div class="grids-1">
+                <div class="icon">
+                  <img src="../public/img/icons/icon1.png" alt="" class="img-fluid"/>
+                </div>
+                <h4>
+                  <a href="">Our Process</a>
+                </h4>
+              </div>
+              <div class="grids-1">
+                <div class="icon">
+                  <img src="../public/img/icons/icon2.png" alt="" class="img-fluid"/>
+                </div>
+                <h4>
+                  <a href="">How We Help</a>
+                </h4>
+              </div>
+
+              <div class="grids-1">
+                <div class="icon">
+                  <img src="../public/img/icons/icon3.png" alt="" class="img-fluid"/>
+                </div>
+                <h4>
+                  <a href="">UX/UI Design</a>
+                </h4>
+              </div>
+
+              <div class="grids-1">
+                <div class="icon">
+                  <img src="../public/img/icons/icon4.png" alt="" class="img-fluid"/>
+                </div>
+                <h4>
+                  <a href="">Creative Ideas</a>
+                </h4>
+              </div>
+            </div> -->
+            <div class="row feature_right_grid">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 my-3">
+                <div class="grids-1">
+                  <img
+                    src="../public/img/icons/icon1.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <span>Our Process</span>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 my-3">
+                <div class="grids-1">
+                  <img
+                    src="../public/img/icons/icon2.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <span>How We Help</span>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 my-3">
+                <div class="grids-1">
+                  <img
+                    src="../public/img/icons/icon3.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <span>UI/UX Design</span>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 my-3">
+                <div class="grids-1">
+                  <img
+                    src="../public/img/icons/icon4.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <span>Creative Ideas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service py-5">
+      <div class="container text-center py-5 my-service">
+        <h2 class="title">Always there for your care, our Services</h2>
+        <div
+          class="row mt-5 text-center justify-content-center service-content"
+        >
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img
+                src="../public/img/home/service1.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <a href="#url" class="title">Work Expertise</a>
+                <p class="card-text">
+                  Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                  elit..
+                </p>
+                <a href="#" class="btn btn-style1 mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img
+                src="../public/img/home/service2.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <a href="#url" class="title">Product Development</a>
+
+                <p class="card-text">
+                  Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                  elit..
+                </p>
+                <a href="#" class="btn btn-style1 mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img
+                src="../public/img/home/service3.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <a href="#url" class="title">Software Development</a>
+                <p class="card-text">
+                  Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                  elit..
+                </p>
+                <a href="#" class="btn btn-style1 mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery py-5">
+    <div class="container text-center py-5 my-gallery">
+      <div class="content-gallery">
+        <span class="kicker">Our Gallery</span>
+        <h2 class="title">Successful projects we've done</h2>
+
+        <div class="row">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 ">
+            <a href="../public/img/home/gallery1.jpg" data-fancybox="gallery" data-caption="Project 1">
+              <div class="item-gallery">
+                <img src="../public/img/home/gallery1.jpg" class="card-img-top img-fluid" alt="..." />
+                <span class="overlay__hover"> </span>
+                <div class="hover-content d-flex flex-column align-items-start mt-2">
+                  <span class="title"> Project 1 </span>
+                  <span class="content">
+                    Quisque ut lectus, eros et, sed commodo risus.
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3 ">
+            <a href="../public/img/home/gallery2.jpg" data-fancybox="gallery" data-caption="Project 2">
+              <div class="item-gallery">
+
+                <img src="../public/img/home/gallery2.jpg" class="card-img-top img-fluid" alt="..." />
+                <span class="overlay__hover"> </span>
+                <div class="hover-content d-flex flex-column align-items-start mt-2">
+                  <span class="title"> Project 2 </span>
+                  <span class="content">
+                    Quisque ut lectus, eros et, sed commodo risus.
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+            <a href="../public/img/home/gallery3.jpg" data-fancybox="gallery" data-caption="Project 3">
+              <div class="item-gallery">
+
+                <img src="../public/img/home/gallery3.jpg" class="card-img-top img-fluid" alt="..." />
+                <span class="overlay__hover"> </span>
+                <div class="hover-content d-flex flex-column align-items-start mt-2">
+                  <span class="title"> Project 3 </span>
+                  <span class="content">
+                    Quisque ut lectus, eros et, sed commodo risus.
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+            <a href="../public/img/home/gallery4.jpg" data-fancybox="gallery" data-caption="Project 4">
+              <div class="item-gallery">
+          
+                <img src="../public/img/home/gallery4.jpg" class="card-img-top img-fluid" alt="..." />
+                <span class="overlay__hover"> </span>
+                <div class="hover-content d-flex flex-column align-items-start mt-2">
+                  <span class="title"> Project 4 </span>
+                  <span class="content">
+                    Quisque ut lectus, eros et, sed commodo risus.
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+            <a href="../public/img/home/gallery5.jpg" data-fancybox="gallery" data-caption="Project 5">
+              <div class="item-gallery">
+          
+                <img src="../public/img/home/gallery5.jpg" class="card-img-top img-fluid" alt="..." />
+                <span class="overlay__hover"> </span>
+                <div class="hover-content d-flex flex-column align-items-start mt-2">
+                  <span class="title"> Project 5 </span>
+                  <span class="content">
+                    Quisque ut lectus, eros et, sed commodo risus.
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+            <a href="../public/img/home/gallery6.jpg" data-fancybox="gallery" data-caption="Project 6">
+              <div class="item-gallery">
+                <img src="../public/img/home/gallery6.jpg" class="card-img-top img-fluid" alt="..." />
+                <span class="overlay__hover"> </span>
+                <div class="hover-content d-flex flex-column align-items-start mt-2">
+                  <span class="title"> Project 6 </span>
+                  <span class="content">
+                    Quisque ut lectus, eros et, sed commodo risus.
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+       
+      </div>
+      <div class="row company-logo pt-5 mt-5 justify-content-center">
+        <div class="col-lg-2 col-md-3 col-4">
+          <img src="../public/img/home/partner1.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-4">
+          <img src="../public/img/home/partner2.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-4">
+          <img src="../public/img/home/partner3.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-4">
+          <img src="../public/img/home/partner4.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-4">
+          <img src="../public/img/home/partner5.png" alt="" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="skills">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Cột trái: ảnh -->
+          <div class="col-lg-6 clo-12">
+            <img
+              src="../public/img/home/skill.jpg"
+              alt="About us"
+              class="radius-image img-fluid"
+            />
+          </div>
+
+          <!-- Cột phải: nội dung + progress bars -->
+          <div class="col-lg-6 clo-12 mt-lg-0 mt-md-5 mt-4 text-start">
+            <span class="title-small">Your success is our success</span>
+            <h3 class="title-big mb-4">
+              Web design, marketing & SEO solutions that get results
+            </h3>
+            <div class="point-progress">
+              <!-- Progress 1 -->
+              <div class="progress-info info1">
+                <h6 class="progress-tittle1 progress-tittle">
+                  Marketing <span>80%</span>
+                </h6>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped gradient-1"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <!-- Progress 2 -->
+            <div class="progress-info info2 e">
+              <h6 class="progress-tittle2 progress-tittle">
+                Responsive Web design <span>95%</span>
+              </h6>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped gradient-2"
+                  role="progressbar"
+                  style="width: 95%"
+                  aria-valuenow="95"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Progress 3 -->
+            <div class="progress-info info3">
+              <h6 class="progress-tittle3 progress-tittle">
+                Analytics <span>60%</span>
+              </h6>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped gradient-3"
+                  role="progressbar"
+                  style="width: 60%"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Progress 4 -->
+            <div class="progress-info info4 mb-0">
+              <h6 class="progress-tittle4 progress-tittle">
+                Web Development <span>85%</span>
+              </h6>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped gradient-4"
+                  role="progressbar"
+                  style="width: 85%"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-6 (cột phải) -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <section class="testimonials py-5">
+      <div class="container py-5 text-center">
+        <div class="testimonial-content">
+          <span class="kicker">Happy Clients Feedback</span>
+          <h2 class="title mb-5">Reviews and Testimonials</h2>
+
+          <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-slide">
+              <p class="content mb-4">
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. adipisicing elit. Esse architecto est ea sunt
+                eligendi cum?
+              </p>
+              <img
+                src="../public/img/home/testimonial1.jpg"
+                alt=""
+                class="testimonial-avatar"
+              />
+              <span class="d-block fw-bold">John wilson</span>
+              <span class="d-block">Student</span>
+            </div>
+
+            <div class="testimonial-slide">
+              <p class="content mb-4">
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. adipisicing elit. Esse architecto est ea sunt
+                eligendi cum?
+              </p>
+              <img
+                src="../public/img/home/testimonial2.jpg"
+                alt=""
+                class="testimonial-avatar"
+              />
+              <span class="d-block fw-bold">John wilson</span>
+              <span class="d-block">Student</span>
+            </div>
+
+            <div class="testimonial-slide">
+              <p class="content mb-4">
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. adipisicing elit. Esse architecto est ea sunt
+                eligendi cum?
+              </p>
+              <img
+                src="../public/img/home/testimonial3.jpg"
+                alt=""
+                class="testimonial-avatar"
+              />
+              <span class="d-block fw-bold">John wilson</span>
+              <span class="d-block">Student</span>
+            </div>
+
+            <div class="testimonial-slide">
+              <p class="content mb-4">
+                Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi,
+                doloribus tempora. adipisicing elit. Esse architecto est ea sunt
+                eligendi cum?
+              </p>
+              <img
+                src="../public/img/home/testimonial4.jpg"
+                alt=""
+                class="testimonial-avatar"
+              />
+              <span class="d-block fw-bold">John wilson</span>
+              <span class="d-block">Student</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news py-5">
+      <div class="container py-5">
+        <div class="row news-content">
+          <div class="title-news text-center mb-4">
+            <span class="kicker"> Latest News </span>
+            <h2 class="title">Our insight and articles</h2>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12 card-content">
+            <div class="card">
+              <img
+                src="../public/img/home/news1.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+
+              <div class="news-header">
+                <span class="kicker"> Startup Business </span>
+                <span class="title-header">Hello world!</span>
+              </div>
+              <div class="news-footer">
+                <div class="news-footer-left">
+                  <img
+                    src="../public/img/home/layouts.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <span>by</span>
+                  <span class="author">W3Layouts</span>
+                </div>
+                <div>
+                  <span class="date">April 1, 2021</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12 card-content">
+            <div class="card">
+              <img
+                src="../public/img/home/news2.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+
+              <div class="news-header">
+                <span class="kicker"> Startup Business </span>
+                <span class="title-header">Hello world!</span>
+              </div>
+              <div class="news-footer">
+                <div class="news-footer-left">
+                  <img
+                    src="../public/img/home/layouts.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <span>by</span>
+                  <span class="author">W3Layouts</span>
+                </div>
+                <div>
+                  <span class="date">April 1, 2021</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12 card-content">
+            <div class="card">
+              <img
+                src="../public/img/home/news3.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+
+              <div class="news-header">
+                <span class="kicker"> Startup Business </span>
+                <span class="title-header">Hello world!</span>
+              </div>
+              <div class="news-footer">
+                <div class="news-footer-left">
+                  <img
+                    src="../public/img/home/layouts.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <span>by</span>
+                  <span class="author">W3Layouts</span>
+                </div>
+                <div>
+                  <span class="date">April 1, 2021</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-contact-project">
+      <div class="container text-center">
+        <div class="row contact-footer-head py-5 px-2">
+          <div class="col my-contact">
+            <div
+              class="content-title d-flex justify-content-center align-content-center flex-column"
+            >
+              <h1 class="title">Let’s find out how to work together</h1>
+              <span class="subtitle mt-3 pe-5"
+                >Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore
+                nisi esse quasi, sit amet. Lorem ipsum dolor sit amet
+                elit.</span
+              >
+            </div>
+            <form
+              class="content-contact mt-5 d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+              <input
+                type="text"
+                class="myInput"
+                placeholder="Your email address"
+                aria-label="inputContact"
+              />
+              <button type="button" class="btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="myfooter content-footer-body">
+      <div class="container content-footer-head py-md-4">
+        <div class="row py-5">
+          <div
+            class="col-lg-4 col-sm-6 col-12 d-flex flex-column justify-content-center align-content-center text-start"
+          >
+            <a class="navbar-brand-footer d-flex flex-column mb-4" href="#">
+              <div class="brand-head-footer ga-1">
+                <i class="fa fa-align-right brand-icon"></i>
+                <span class="brand-title-footer">Corp Vision</span>
+              </div>
+              <span class="brand-subtitle-footer">Vision to your Future</span>
+            </a>
+            <p class="brand-content-footer">
+              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+              ultrices in ligula. Semper attempufdd. Lorem ipsum dolor sit amet.
+              Semper at elit team advisors.
+            </p>
+            <ul class="social-meida">
+              <li class="item-icon">
+                <i class="fa-brands fa-facebook"></i>
+              </li>
+              <li class="item-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li class="item-icon">
+                <i class="fa-brands fa-twitter"></i>
+              </li>
+              <li class="item-icon">
+                <i class="fa-brands fa-square-linkedin"></i>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-lg-4 col-sm-6 col-12 contact-info d-flex flex-column justify-content-start"
+          >
+            <h2 class="title">Contact Info</h2>
+            <ul class="content">
+              <li class="item">
+                <span>Address:</span>
+                <span class="value"
+                  >Corp Vision, 343 marketing, #21 cravel 1st lane street, NY -
+                  62617.</span
+                >
+              </li>
+              <li class="item">
+                <a href="">
+                  <span>Phone Number:</span>
+                  <span class="value">+1(21) 234 4567</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="">
+                  <span>Email:</span>
+                  <span class="value">info@example.com</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="">
+                  <span>Support:</span>
+                  <span class="value">info@support.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-6 col-12">
+            <h2 class="title">Categories</h2>
+            <ul class="key">
+              <li class="item">
+                <a href="" class="value">Marketing Strategy</a>
+              </li>
+              <li class="item">
+                <a href="" class="value">Startup Business</a>
+              </li>
+              <li class="item">
+                <a href="" class="value">Web development</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-6 col-12">
+            <h2 class="title">Meta</h2>
+            <ul class="key">
+              <li class="item">
+                <a href="" class="value">Log in</a>
+              </li>
+              <li class="item">
+                <a href="" class="value">Entries feed</a>
+              </li>
+              <li class="item">
+                <a href="" class="value">Comments feed</a>
+              </li>
+              <li class="item">
+                <a href="" class="value">WordPress.org</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right text-center">
+        <div class="row">
+          <div class="col content-copy">
+            <p class="copy">
+              © 2026 Corp Vision All Rights Reserved | WordPress Theme by
+              <a class="brand" href="#">W3Layouts.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a
+      class="backtotop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+    >
+      <i class="fa fa-chevron-up"></i>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- 2. Nhúng file JS của Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../assets/main.js" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>
