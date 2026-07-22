@@ -691,7 +691,19 @@
 }
 
 /* section news  */
-
+.title-news .kicker {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #7e7d7d;
+}
+.title-news .title {
+  color: #3f3a64;
+  font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+}
 .card {
   border: none;
   border-radius: 8px;
