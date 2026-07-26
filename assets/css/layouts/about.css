@@ -90,7 +90,7 @@ p {
 }
 
 .breadcrumb-bg-about {
-    background: url(../../../Public/img/about/banner.jpg);
+    background: url(../../../assets/img/about/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -254,7 +254,7 @@ p {
 
 /* --- Cover Section --- */
 .w3l-about4 {
-    background: url(../../../Public/img/about/solutions-bg.jpg);
+    background: url(../../../assets/img/about/solutions-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
