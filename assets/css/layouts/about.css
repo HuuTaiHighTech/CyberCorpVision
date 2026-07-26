@@ -1,132 +1,438 @@
-/* Layout và làm đẹp của trang about */
-/* --- INLINE STYLE FROM SOURCE --- */
-img:is([sizes=auto i],[sizes^="auto," i]){
-    contain-intrinsic-size: 3000px 1500px;
+/* =================================================_
+   Corpvision Template - Full Optimized CSS for index.html
+   ================================================= */
+
+/* --- Global & Typography --- */
+* {
+    box-sizing: border-box;
 }
 
-img.wp-smiley, img.emoji {
-    display: inline !important;
-    border: none !important;
-    box-shadow: none !important;
-    height: 1em !important;
-    width: 1em !important;
-    margin: 0 0.07em !important;
-    vertical-align: -0.1em !important;
-    background: none !important;
-    padding: 0 !important;
+body {
+    font-family: 'Jost', sans-serif;
+    color: #5a5a5a;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
-.recentcomments a {
-    display: inline !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-/* --- DEMO BAR STYLES --- */
-span.w3l-icon.-back span.fa {
-    position: static;
-    color: #e6ebff;
-}
-#w3lDemoBar.w3l-demo-bar {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-    padding: 70px 5px 10px; /* Gộp padding-top vào đây luôn */
-    background: #0D1326;
-    border-top-left-radius: 9px;
-    border-bottom-left-radius: 9px;
-}
-#w3lDemoBar.w3l-demo-bar a {
-    display: block;
-    color: #e6ebff;
+a {
     text-decoration: none;
-    line-height: 24px;
-    opacity: .6;
-    margin-bottom: 20px;
-    text-align: center;
-}
-#w3lDemoBar.w3l-demo-bar span.w3l-icon {
-    display: block;
-}
-#w3lDemoBar.w3l-demo-bar a:hover {
-    opacity: 1;
-}
-#w3lDemoBar.w3l-demo-bar .w3l-icon svg {
-    color: #e6ebff;
-}
-#w3lDemoBar.w3l-demo-bar .responsive-icons {
-    margin-top: 30px;
-    border-top: 1px solid #41414d;
-    padding-top: 40px;
-}
-#w3lDemoBar.w3l-demo-bar .demo-btns {
-    border-top: 1px solid #41414d;
-    padding-top: 30px;
-}
-#w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
-    font-size: 26px;
-}
-#w3lDemoBar.w3l-demo-bar .no-margin-bottom {
-    margin-bottom: 0;
-}
-.toggle-right-sidebar span {
-    background: #0D1326;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    color: #e6ebff;
-    border-radius: 50px;
-    font-size: 26px;
-    cursor: pointer;
-    opacity: .5;
-}
-.pull-right-demo-bar {
-    float: right;
-    position: fixed;
-    right: 0px;
-    top: 150px;
-    width: 90px;
-    z-index: 99999;
-    text-align: center;
-}
-#right-sidebar {
-    width: 90px;
-    position: fixed;
-    z-index: 1000;
-    right: 0px;
-    top: 0;
-    margin-top: 140px;
-    transition: all .5s ease-in-out;
-    overflow-y: auto;
-}
-.hide-right-bar-notifications {
-    margin-right: -300px !important;
-    transition: all .3s ease-in-out;
+    transition: 0.3s ease;
 }
 
-/* --- LOCAL IMAGES CONVERSION (Đã gộp thuộc tính dùng chung) --- */
-.bg1, .bg2, .bg3, .bg4 {
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+/* --- Utility & Shared Classes --- */
+.position-relative {
+    position: relative;
+}
+
+.radius-image {
+    border-radius: 6px;
+}
+
+.radius-image-full {
+    border-radius: 6px;
+    width: 100%;
+}
+
+.title-small {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #00A63F;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.title-big {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.btn-style {
+    padding: 14px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #00A63F;
+    border-color: #00A63F;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #008c35;
+    border-color: #008c35;
+    color: #fff;
+}
+
+/* --- Breadcrumb Section --- */
+.w3l-about-breadcrumb {
+    text-align: center;
+}
+
+.breadcrumb-bg-about {
+    background: url(../../../Public/img/about/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    position: relative;
+    z-index: 0;
 }
-.bg1 { background-image: url(img/b1.jpg); }
-.bg2 { background-image: url(img/b2.jpg); }
-.bg3 { background-image: url(img/b3.jpg); }
-.bg4 { background-image: url(img/b4.jpg); }
 
-/* --- RESPONSIVE MEDIA --- */
-@media (max-width: 992px) {
-    #w3lDemoBar.w3l-demo-bar a.desktop-mode { display: none; }
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 15, 15, 0.6);
+    z-index: -1;
 }
-@media (max-width: 767px) {
-    #w3lDemoBar.w3l-demo-bar a.tablet-mode { display: none; }
+
+.w3l-about-breadcrumb .title {
+    font-size: 45px;
+    line-height: 55px;
+    color: #fff;
+    font-weight: 600;
 }
-@media (max-width: 568px) {
-    #w3lDemoBar.w3l-demo-bar a.mobile-mode { display: none; }
-    #w3lDemoBar.w3l-demo-bar .responsive-icons { margin-top: 0px; border-top: none; padding-top: 0px; }
-    #right-sidebar, .pull-right-demo-bar { width: 90px; }
-    #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile { margin-bottom: 0; }
+
+.w3l-about-breadcrumb .inner-page-para {
+    color: #eee;
+    font-size: 18px;
+}
+
+/* --- About Section --- */
+.w3l-aboutblock1 {
+    background: #fff;
+}
+
+.bg-shape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00A63F;
+    top: -15px;
+    left: -15px;
+    border-radius: 6px;
+    z-index: -1;
+}
+
+.imginfo__box {
+    position: absolute;
+    bottom: -30px;
+    right: 30px;
+    background: #00A63F;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.imginfo__title {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1;
+}
+
+.imginfo__box p {
+    color: #fff;
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.about-right-faq {
+    position: relative;
+}
+
+/* Video Play Trigger inside About Section */
+.play-view {
+    display: inline-block;
+}
+
+.video-play-icon {
+    width: 60px;
+    height: 60px;
+    background: #00A63F;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #d8e2dc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.video-play-icon:hover {
+    background: #00A63F;
+    color: #fff;
+}
+
+/* About Features Boxes */
+.area-box {
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    height: 100%;
+    transition: 0.3s ease;
+}
+
+.area-box:hover {
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.area-box i {
+    font-size: 36px;
+    color: #00A63F;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.area-box .title-head {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.area-box p {
+    margin-top: 10px;
+    color: #5a5a5a;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+/* --- Stats Section --- */
+.w3l-about2 {
+    background: #f8f9fa;
+}
+
+.cwp23-text-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.cwp23-text-cols span {
+    font-size: 45px;
+    font-weight: 600;
+    color: #00A63F;
+    line-height: 1;
+    display: block;
+}
+
+.cwp23-text-cols h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+    color: #2b2b2b;
+}
+
+.cwp23-text-cols p {
+    font-size: 14px;
+    color: #5a5a5a;
+    margin: 0;
+}
+
+/* --- Cover Section --- */
+.w3l-about4 {
+    background: url(../../../Public/img/about/solutions-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+.w3l-about4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.w3l-about4 .title-big,
+.w3l-about4 p {
+    color: #fff;
+}
+
+.history-info .heading {
+    max-width: 800px;
+}
+
+/* --- Team Section --- */
+.w3l-team {
+    background: #fff;
+}
+
+.team-member {
+    margin-bottom: 30px;
+}
+
+.team-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.team-img img {
+    width: 100%;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.team-img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.team-img:hover .overlay {
+    opacity: 1;
+}
+
+.team-details p {
+    color: #eee;
+    font-size: 14px;
+    margin: 0;
+}
+
+.team-details .socials {
+    margin-top: 15px;
+}
+
+.team-details .socials a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    margin: 0 3px;
+    transition: 0.3s;
+}
+
+.team-details .socials a:hover {
+    background: #00A63F;
+}
+
+.team-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #2b2b2b;
+}
+
+.team-member > p {
+    color: #777;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* --- Why Choose Us Section --- */
+.w3l-content-4 {
+    background: #f8f9fa;
+}
+
+.content4-right-grids {
+    display: flex;
+    align-items: flex-start;
+}
+
+.content4-icon {
+    width: 65px;
+    height: 65px;
+    background: rgba(0, 166, 63, 0.1);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+
+.content4-right-grids:hover .content4-icon {
+    background: #00A63F;
+}
+
+.content4-right-grids:hover .content4-icon span {
+    color: #fff;
+}
+
+.content4-icon span {
+    font-size: 26px;
+    color: #00A63F;
+    transition: 0.3s;
+}
+
+.content4-right-info {
+    padding-left: 20px;
+}
+
+.content4-right-info h6 a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.content4-right-info h6 a:hover {
+    color: #00A63F;
+}
+
+.content4-right-info p {
+    margin-top: 8px;
+    color: #5a5a5a;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+/* --- CTA Section --- */
+.w3l-project-contact {
+    background: #2b2b2b;
+    color: #fff;
+}
+
+.w3l-project-contact .title-big {
+    color: #fff;
+}
+
+.w3l-project-contact p {
+    color: #bbb;
+    margin-bottom: 0;
 }
