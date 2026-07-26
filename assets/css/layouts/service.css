@@ -1,1 +1,149 @@
 /* Layout và làm đẹp của trang service */
+/* =========================================
+   1. BREADCRUMB / BANNER SECTION
+   ========================================= */
+.w3l-about-breadcrumb {
+    text-align: center;
+}
+
+.breadcrumb-bg-about {
+    background: url('../../../Public/img/service/banner-bg.jpg') no-repeat center / cover;
+    position: relative;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Thêm background overlay nếu cần, ví dụ: rgba(0,0,0,0.4) */
+    z-index: -1;
+}
+
+.ServicesPageBanner {
+    font-weight: 600;
+}
+
+.inner-page-para {
+    opacity: 0.8;
+}
+
+/* =========================================
+   2. SERVICES & MORE SERVICES SECTIONS
+   ========================================= */
+.ServicesPageServices .service-grid-left,
+.ServicesPageMoreServices .grids-1 {
+    padding: 20px 0;
+}
+
+.title-service {
+    font-weight: 600;
+}
+
+.text-para {
+    line-height: 1.6;
+}
+
+/* Grid icons & boxes */
+.grids-1.box-wrap {
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.grids-1.box-wrap:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.grids-1 .icon img {
+    max-width: 50px;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   3. FEATURED SERVICES (INDUSTRIES)
+   ========================================= */
+.ServicesPageFeaturedServices .grids-feature {
+    margin-bottom: 30px;
+}
+
+.area-box {
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+.area-box i {
+    font-size: 30px;
+    color: var(--primary-color, #00A699);
+    margin-right: 20px;
+}
+
+.area-box-info .title-head {
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+}
+
+.area-box-info .title-head:hover {
+    color: var(--primary-color, #00A699);
+}
+
+/* =========================================
+   4. CONTACT QUOTE SECTION
+   ========================================= */
+.quote-info {
+    background: url('../../../Public/img/service/contact-bg.jpg') no-repeat center / cover;
+    position: relative;
+    z-index: 0;
+}
+
+.quote-sec-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.appyl-sub-icon {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.appyl-sub-icon-info h5 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.appyl-sub-icon-info p, 
+.appyl-sub-icon-info a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.appyl-sub-icon-info a:hover {
+    color: #fff;
+}
+
+.quote-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
