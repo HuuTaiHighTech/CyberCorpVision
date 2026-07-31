@@ -6,7 +6,7 @@ body.header-scrolled {
 }
 
 
-.fixed-top {
+.main-header {
     position: fixed;
     top: 0;
     right: 0;

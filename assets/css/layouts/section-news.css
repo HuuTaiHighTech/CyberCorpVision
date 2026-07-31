@@ -1,0 +1,113 @@
+/* section news  */
+ .kicker {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #7e7d7d;
+  }
+  /* .title-news .title {
+    color: #3f3a64;
+    font-size: 35px;
+      line-height: 45px;
+      font-weight: 700;
+  } */
+  .card {
+    border: none;
+    border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+
+  }
+  .card .kicker {
+    font-size: 0.875rem;
+    line-height: 2.14;
+        font-weight: 600;
+            letter-spacing: 0.0714em;
+            color: #7e7d7d;
+  }
+  .card .title-news {
+    color: #3f3a64;
+    font-size: 35px;
+      line-height: 45px;
+      font-weight: 700;
+  }
+  .news-content .card-body .kicker{
+    font-weight: 400;
+      font-size: 14px;
+      color: #999;
+  }
+
+  .card-body .title-header{
+    display: block;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 600;
+      color: #3f3a64;
+      margin-top: 10px;
+  }
+  .news-header {
+    padding: 20px;
+  }
+  .news-header .kicker {
+    display: block;
+        font-weight: 400;
+      font-size: 17px;
+      color: #999;
+      text-transform: none;
+  }
+  /* trước hover  */
+  .news-header .title-header {
+        display: block;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 600;
+      color: #3f3a64;
+      margin-top: 10px;
+      transition: all 0.3s ease;
+  }
+  /* sau hover  */
+  .news-header .title-header:hover {
+    color: var(--color-primary);
+  }
+  .news-footer {
+    padding: 12px 20px;
+    border-top: 0.5px solid gray;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .news-footer .author{
+    font-size: 16px;
+      color: #3f3a64;
+      font-weight: 600;
+      line-height: 26px;
+      text-transform: capitalize;
+      transition: all 0.3s ease;
+      width: 100%;
+  }
+  .news-footer .author:hover {
+    color: var(--color-primary);
+  }
+  .news-footer .date {
+    font-size: 15px;
+    color: #858585;
+  }
+
+  .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+    overflow: hidden; /* thêm dòng này — chặn ảnh tràn ra ngoài card khi zoom */
+  }
+
+  .card-content img {
+    transition: transform 0.6s ease; /* thêm dòng này — hiệu ứng mượt cả lúc zoom vào lẫn zoom ra */
+  }
+
+  .card-content img:hover {
+    transform: scale(1.1);
+  }

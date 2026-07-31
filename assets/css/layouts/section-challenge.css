@@ -1,0 +1,56 @@
+/* section challenges */
+.challenges {
+  background-color: #f7f7f7;
+}
+
+.grids-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.grids-1:hover {
+  transform: translateY(-0.25rem);
+  box-shadow:
+    0 2px 4px rgba(46, 41, 51, 0.08),
+    0 5px 10px rgba(71, 63, 79, 0.16);
+  transition: 0.3s ease;
+}
+.grids-1 span {
+  transition: all 0.3s ease;
+}
+.grids-1 span:hover {
+  color: var(--color-primary-hover);
+}
+.grids-1 img {
+  display: block;
+  max-width: 65px;
+  margin: 0 auto;
+}
+.grids-1 span {
+  display: block;
+  flex-wrap: nowrap;
+  margin-top: 25px;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+
+
+  .challenge-content h2 {
+    font-size: var(--mobile-h2); /* hoặc biến --mobile-h2 nếu bạn có định nghĩa riêng */
+  }
+  .challenge-content   p {
+    font-size: var(--mobile-p);
+    /* width: 100%; */
+  }
+  .challenge-content button {
+    font-size: var(--mobile-p);
+  }
+  .challenge-content span {
+    font-size: var(--mobile-p);
+  }
+}

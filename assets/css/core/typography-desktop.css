@@ -3,10 +3,10 @@
 
   /* font size heading */
   --desktop-h1: 4rem; /* 64px */
-  --desktop-h2: 3.5rem; /* 56px */
+  --desktop-h2: 2rem; /* 56px */
   --desktop-h3: 3rem; /* 48px */
   --desktop-h4: 2.5rem; /* 40px */
-  --desktop-h5: 2rem; /* 32px */
+  --desktop-h5: 3.5rem; /* 32px */
   --desktop-h6: 1.5rem; /* 24px */
 
   /* font size content */
@@ -34,13 +34,15 @@
   --lh-normal: 1.5; /* 150% */
   --lh-relaxed: 1.75; /* 175% */
   --lh-loose: 2; /* 200% */
-  /* letter spacing */
+  /* letter spacing lại gần*/
   --ls-h1: -0.03em; /* ≈ -1.92px @ 64px */
   --ls-h2: -0.025em; /* ≈ -1.40px @ 56px */
   --ls-h3: -0.02em; /* ≈ -0.96px @ 48px */
   --ls-h4: -0.015em; /* ≈ -0.60px @ 40px */
   --ls-h5: -0.01em; /* ≈ -0.32px @ 32px */
   --ls-h6: 0; /* 0px */
+  /* letter spacing cách xa*/
+  --ls-p: 0.010em;
   /* Khoảng cách item này đển item khác */
   /* 1. Biến cơ sở (tương đương $spacer) */
   --spacer: 1rem; /* Mặc định 16px */
@@ -53,30 +55,91 @@
   --space-5: calc(var(--spacer) * 3); /* 48px */
   --space-6: calc(var(--spacer) * 4); /* 64px */
 }
+@media (max-width: 992px) {
+  :root {
+    font-size: 14px;
+    /* font size heading - mobile (1rem = 14px) */
+    --mobile-h1: 2rem;   
+    --mobile-h2: 1.75rem;     
+    --mobile-h3: 1.75rem;  
+    --mobile-h4: 1.5rem;   
+    --mobile-h5: 1.25rem;  
+    --mobile-h6: 1.125rem; 
+    --mobile-p: 1rem;
+  }
+}
 html,
 body {
   font-family: "Jost", sans-serif;
   color: black;
 }
-h1 {
-  font-size: 4.0625rem;
-  line-height: 1.1;
+
+
+/* h1 title  */
+.title-big-desk {
+  font-size: var(--desktop-h1);
   font-weight: var(--fw-semibold);
+  line-height: var(--lh-none);
+  letter-spacing: var(--lh-none);
 }
-h2 {
-  font-size: 3.125rem;
-  font-weight: var(--fw-semibold);
-  letter-spacing: var(--ls-h2);
-}
-.title-big {
-  font-size: 2.1875rem;
-  line-height: 1.29;
+/* h2 title  */
+.title-xxl-desk {
+  font-size: var(--desktop-h2);
   font-weight: var(--fw-bold);
+  line-height: var(--lh-none);
+  letter-spacing: var(--lh-none);
+  color: var(--color-h2-title);
 }
-.kicker {
+.title-lg-desk {
+  font-size: var(--text-base);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-p);
+  color: var(--color-h2-title);
+
+}
+/* content  */
+.content-desk {
+  font-size: var(--text-base);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-p);
+  color: var(--color-p);
+}
+
+/* button  */
+.button-desk {
+  font-size: var(--text-base);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-p);
+}
+.kicker-desk {
   font-size: var(--text-sm);
   line-height: 2.14;
   font-weight: var(--fw-semibold);
   letter-spacing: 0.0714em;
   text-transform: uppercase;
+  color: var(--kicker);
+}
+.title-head {
+  font-size: var(--desktop-h6);
+  line-height: var(--lh-tight);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-p);
+  color: var(--neutral-800);
+}
+.title-card-head {
+  font-size: var(--desktop-h6);
+  line-height: var(--lh-tight);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-p);
+  color: var(--neutral-100);
+}
+@media (min-width: 300px) and (max-width: 992px) {
+  h2 {
+    font-size: var(
+      --mobile-h2
+    ); /* hoặc biến --mobile-h2 nếu bạn có định nghĩa riêng */
+  }
 }

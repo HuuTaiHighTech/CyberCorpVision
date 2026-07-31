@@ -1,0 +1,59 @@
+/* section services */
+.service-content .card {
+  border: none;
+}
+.card-body {
+  position: relative;
+  padding: 0 20px;
+}
+.btn-style1 {
+  padding: 8px 35px;
+  border-radius: 8px;
+}
+/* trước hover */
+
+.service-content .card .title {
+  transition: all 0.3s ease;
+}
+
+.card-body .card-text {
+  color: #858585;
+}
+/* sau hover */
+.service-content .card:hover .title {
+  color: var(--color-primary-hover);
+}
+.service-content .btn {
+  transition: all 0.3s ease;
+}
+.service-content .btn:hover {
+  color: var(--color-primary-hover);
+}
+.card-body .title {
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #3f3a64;
+  text-align: center;
+  padding: 12px 35px;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+  transform: translateY(-25px);
+  background-color: white;
+}
+@media (min-width: 300px) and (max-width: 992px) {
+  h2 {
+    font-size: var(
+      --mobile-h2
+    ); /* hoặc biến --mobile-h2 nếu bạn có định nghĩa riêng */
+  }
+  .service-content a {
+    font-size: var(--mobile-p);
+    /* width: 100%; */
+  }
+  .challenge-content button {
+    font-size: var(--mobile-p);
+  }
+}

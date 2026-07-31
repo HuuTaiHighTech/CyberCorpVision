@@ -1,0 +1,55 @@
+/* Section about us */
+
+.img-right {
+    display: flex;
+    align-items: start;
+}
+.radius-image{
+    border-radius: 8px;
+}
+
+.radius-image.bottom {
+  /* margin-top: 16px; */
+}
+
+
+.about-us .kicker {
+  display: block;
+}
+.service-list .service-link a {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #4c476e;
+}
+.service-link a {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+}
+.service-link p {
+  color: #3f3a64;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.service-link i {
+  color: #009f4d;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+
+
+  .aboutus-content h2 {
+    font-size: var(--mobile-h2); /* hoặc biến --mobile-h2 nếu bạn có định nghĩa riêng */
+  }
+  .aboutus-content  p {
+    font-size: var(--mobile-p);
+    /* width: 100%; */
+  }
+  .service-list i {
+    font-size: var(--mobile-p);
+  }
+
+}
