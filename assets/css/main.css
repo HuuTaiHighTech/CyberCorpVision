@@ -5,4 +5,19 @@
 @import url(./core/components/header.css);
 @import url(./core/components/footer.css);
 @import url(./core/components/cta.css);
-@import url(./layouts/home.css);
+/* @import url(./layouts/home.css); */
+@import url(./layouts/section-banner.css);
+@import url(./layouts/effect-home.css);
+@import url(./layouts/section-aboutus.css);
+@import url(./layouts/section-challenge.css);
+@import url(./layouts/section-service.css);
+@import url(./layouts/section-gallery.css);
+@import url(./layouts/section-skill.css);
+@import url(./layouts/section-news.css);
+@import url(./layouts/section-testimonial.css);
+@import url(./layouts/section-contact.css);
+@import url(./layouts/section-backtotop.css);
+
+
+
+
