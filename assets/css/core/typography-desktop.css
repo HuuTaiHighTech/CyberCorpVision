@@ -96,8 +96,8 @@ body {
   line-height: var(--lh-tight);
   letter-spacing: var(--ls-p);
   color: var(--color-h2-title);
-
 }
+
 /* content  */
 .content-desk {
   font-size: var(--text-base);
@@ -120,6 +120,13 @@ body {
   font-weight: var(--fw-semibold);
   letter-spacing: 0.0714em;
   text-transform: uppercase;
+  color: var(--kicker);
+}
+.role-desk {
+  font-size: var(--text-sm);
+  line-height: 2.14;
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.0714em;
   color: var(--kicker);
 }
 .title-head {
