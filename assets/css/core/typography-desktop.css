@@ -110,9 +110,10 @@ body {
 /* button  */
 .button-desk {
   font-size: var(--text-base);
-  font-weight: var(--fw-semibold);
+  font-weight: var(--fw-bold);
   line-height: var(--lh-tight);
   letter-spacing: var(--ls-p);
+  color: var(--neutral-100);
 }
 .kicker-desk {
   font-size: var(--text-sm);
