@@ -44,6 +44,7 @@
   background-color: white;
 }
 @media (min-width: 300px) and (max-width: 992px) {
+  
   h2 {
     font-size: var(
       --mobile-h2
