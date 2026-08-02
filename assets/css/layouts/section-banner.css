@@ -32,7 +32,6 @@
   height: auto;
   min-height: 80px;
 }
-
 .shape path {
   fill: var(--neutral-100);
 }
@@ -88,7 +87,6 @@
   padding-top: 0;   /* nav không cần padding-top như content */
   pointer-events: none; /* để click xuyên qua vùng trống, tránh che slide content */
 }
-
 .container .banner-content {
   width: 60%;
   display: inline-block;
