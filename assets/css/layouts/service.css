@@ -1,284 +1,149 @@
-
-:root {
-  --primary-color: #0d6efd;       /* Màu xanh chủ đạo */
-  --secondary-color: #ff2a70;     /* Màu hồng tạo điểm nhấn */
-  --title-color: #060606;         /* Màu tiêu đề chính */
-  --text-color: #707070;          /* Màu văn bản / đoạn văn */
-  --bg-light: #f8f9fa;            /* Màu nền xám nhẹ */
-  --border-radius: 6px;
-  --font-main: 'Jost', sans-serif;
+/* Layout và làm đẹp của trang service */
+/* =========================================
+   1. BREADCRUMB / BANNER SECTION
+   ========================================= */
+.w3l-about-breadcrumb {
+    text-align: center;
 }
 
-body {
-  font-family: var(--font-main);
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
-/* Kiểu dáng tiêu đề chung */
-.title-small {
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1em;
-  letter-spacing: 1px;
-  color: var(--secondary-color);
-  display: block;
-}
-
-.title-big {
-  font-size: 35px;
-  line-height: 45px;
-  font-weight: 700;
-  color: var(--title-color);
-}
-
-@media (max-width: 768px) {
-  .title-big {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-
-/* Kiểu dáng Nút bấm (Button) */
-.btn-style {
-  padding: 12px 30px;
-  font-weight: 600;
-  font-size: 14px;
-  color: #ffffff;
-  border-radius: var(--border-radius);
-  transition: all 0.3s ease-in-out;
-  display: inline-block;
-  border: none;
-}
-
-.btn-primary {
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background-color: var(--secondary-color);
-  color: #fff;
-}
-
-/* 2. BREADCRUMB / BANNER ĐẦU TRANG */
 .breadcrumb-bg-about {
-  background: url("https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b1.jpg") no-repeat center;
-  background-size: cover;
-  position: relative;
-  z-index: 0;
+    background: url('../../../Public/img/service/banner-bg.jpg') no-repeat center / cover;
+    position: relative;
+    z-index: 0;
 }
 
-.breadcrumb-bg-about::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  min-height: 100%;
-  left: 0;
-  right: 0;
-  opacity: 0.6;
-  background: #000000;
-  z-index: -1;
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Thêm background overlay nếu cần, ví dụ: rgba(0,0,0,0.4) */
+    z-index: -1;
 }
 
 .ServicesPageBanner {
-  font-size: 50px;
-  font-weight: 700;
-  color: #ffffff;
+    font-weight: 600;
 }
 
 .inner-page-para {
-  font-size: 18px;
-  color: #eee;
-  max-width: 600px;
-  margin: 0 auto;
+    opacity: 0.8;
 }
 
-/* 3. KHU VỰC CHECK OUR SERVICES (Hình ảnh xen kẽ chữ) */
-.w3l-features .service-grid-left {
-  padding-right: 2rem;
+/* =========================================
+   2. SERVICES & MORE SERVICES SECTIONS
+   ========================================= */
+.ServicesPageServices .service-grid-left,
+.ServicesPageMoreServices .grids-1 {
+    padding: 20px 0;
 }
 
-.w3l-features .title-service {
-  font-size: 26px;
-  line-height: 36px;
-  font-weight: 700;
-  color: var(--title-color);
+.title-service {
+    font-weight: 600;
 }
 
-.w3l-features .text-para {
-  font-size: 16px;
-  color: var(--text-color);
-  line-height: 26px;
+.text-para {
+    line-height: 1.6;
 }
 
-.w3l-features img.img-fluid {
-  border-radius: var(--border-radius);
-  width: 100%;
+/* Grid icons & boxes */
+.grids-1.box-wrap {
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-.w3l-features .service-grid-left img.img-fluid {
-  width: 50px; /* Định kích thước riêng cho Icon */
+.grids-1.box-wrap:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* 4. KHU VỰC WHAT INDUSTRIES WE SERVE? (Lưới 6 ô Dịch vụ) */
-.w3l-aboutblock1 {
-  background-color: var(--bg-light);
+.grids-1 .icon img {
+    max-width: 50px;
+    margin-bottom: 20px;
 }
 
-.w3l-aboutblock1 .area-box {
-  padding: 40px 30px;
-  background: #ffffff;
-  border-radius: var(--border-radius);
-  transition: all 0.3s ease-in-out;
-  border: 1px solid #eee;
-  height: 100%;
+/* =========================================
+   3. FEATURED SERVICES (INDUSTRIES)
+   ========================================= */
+.ServicesPageFeaturedServices .grids-feature {
+    margin-bottom: 30px;
 }
 
-.w3l-aboutblock1 .area-box:hover {
-  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.08);
-  transform: translateY(-5px);
+.area-box {
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
 }
 
-.w3l-aboutblock1 .area-box i.fa {
-  font-size: 32px;
-  color: var(--primary-color);
-  margin-bottom: 20px;
+.area-box i {
+    font-size: 30px;
+    color: var(--primary-color, #00A699);
+    margin-right: 20px;
 }
 
-.w3l-aboutblock1 .title-head {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--title-color);
-  text-decoration: none;
+.area-box-info .title-head {
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
 }
 
-.w3l-aboutblock1 .title-head:hover {
-  color: var(--primary-color);
+.area-box-info .title-head:hover {
+    color: var(--primary-color, #00A699);
 }
 
-.w3l-aboutblock1 .area-box p {
-  margin-top: 10px;
-  margin-bottom: 0;
-  font-size: 15px;
-}
-
-/* 5. KHU VỰC CONTACT & FORM (Nền bg1.jpg) */
+/* =========================================
+   4. CONTACT QUOTE SECTION
+   ========================================= */
 .quote-info {
-  background: url("https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/bg1.jpg") no-repeat center;
-  background-size: cover;
-  position: relative;
-  z-index: 0;
-}
-
-.quote-info::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  min-height: 100%;
-  left: 0;
-  right: 0;
-  opacity: 0.7;
-  background: #000000;
-  z-index: -1;
+    background: url('../../../Public/img/service/contact-bg.jpg') no-repeat center / cover;
+    position: relative;
+    z-index: 0;
 }
 
 .quote-sec-info {
-  display: flex;
-  margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
 }
 
-.quote-sec-info .appyl-sub-icon span.fa {
-  font-size: 20px;
-  color: var(--primary-color);
-  width: 55px;
-  height: 55px;
-  background: rgba(255, 255, 255, 0.1);
-  line-height: 55px;
-  text-align: center;
-  border-radius: 50%;
-  margin-right: 20px;
+.appyl-sub-icon {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
-.quote-sec-info .appyl-sub-icon-info h5 {
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: 600;
-  margin-bottom: 5px;
+.appyl-sub-icon-info h5 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
 }
 
-.quote-sec-info .appyl-sub-icon-info p,
-.quote-sec-info .appyl-sub-icon-info a {
-  color: #eee;
-  font-size: 15px;
-  text-decoration: none;
+.appyl-sub-icon-info p, 
+.appyl-sub-icon-info a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
 }
 
-.quote-sec-info .appyl-sub-icon-info a:hover {
-  color: var(--primary-color);
+.appyl-sub-icon-info a:hover {
+    color: #fff;
 }
 
-/* Form tư vấn */
 .quote-form {
-  background: #ffffff;
-  padding: 40px;
-  border-radius: var(--border-radius);
-}
-
-.quote-form .form-control {
-  background-color: var(--bg-light);
-  border: 1px solid #eee;
-  color: var(--title-color);
-  font-size: 15px;
-  padding: 14px 20px;
-  height: auto;
-  border-radius: var(--border-radius);
-}
-
-.quote-form .form-control:focus {
-  box-shadow: none;
-  border-color: var(--primary-color);
-  background-color: #fff;
-}
-
-.quote-form textarea.form-control {
-  height: 120px;
-  resize: none;
-}
-
-.quote-form .submit {
-  width: 100%;
-}
-
-/* 6. KHU VỰC MORE SERVICES (3 Card dưới cùng) */
-.w3l-features .box-wrap {
-  padding: 40px 30px;
-  border-radius: var(--border-radius);
-  background: #ffffff;
-  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.04);
-  border: 1px solid #eee;
-  transition: all 0.3s ease-in-out;
-  text-align: left;
-}
-
-.w3l-features .box-wrap:hover {
-  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
-  transform: translateY(-5px);
-}
-
-.w3l-features .box-wrap .icon img {
-  width: 50px;
-  margin-bottom: 25px;
-}
-
-.w3l-features .box-wrap h4 .title-head {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--title-color);
-  text-decoration: none;
-}
-
-.w3l-features .box-wrap h4 .title-head:hover {
-  color: var(--primary-color);
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
