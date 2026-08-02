@@ -69,3 +69,28 @@
     color: white;
     border: 2px solid #009f4d;
   }
+  @media (max-width: 768px) {
+    .content-contact {
+      flex-direction: row;
+      align-items: stretch !important;
+    }
+
+    .content-contact .myInput {
+      width: 100%;
+    }
+
+    .content-contact .btn {
+      padding: 14px 10px;
+      font-size: 14px;
+    }
+
+    .content-contact .fa-solid {
+      font-size: 12px;
+      display: inline-flex;
+      padding: 12px 20px;
+    }
+
+    .myInput::placeholder {
+      font-size: 12px;
+    }
+  }
