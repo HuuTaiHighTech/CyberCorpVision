@@ -1,11 +1,16 @@
 .cta {
     padding: 15px 50px;
     color: white;
-    background-color: #008030;
+    background-color: #00a63f;
     border: transparent;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 .cta:hover {
     background-color: #00732c;
+}
+.cta:focus {
+    background-color: #008030;
+    border-color: #00732c;
+    box-shadow: 0 0 0 0.2rem rgba(38, 179, 92, 0.5);
 }
