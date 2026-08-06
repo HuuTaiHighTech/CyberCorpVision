@@ -12,18 +12,18 @@ body.header-scrolled {
     right: 0;
     left: 0;
     width: 100%;
-    z-index: 1030;
+    /* z-index: 1030; */
 }
 /* trước khi croll main header */
 header.main-header {
     padding: 0px;
     overflow: hidden;
-    transition: height 0.4s ease 0s, background-color 0.4s ease 0s, box-shadow 0.4s ease 0s;
+    /* transition: height 0.4s ease 0s, background-color 0.4s ease 0s, box-shadow 0.4s ease 0s; */
     height: auto;
     display: grid;
     align-items: center;
     z-index: 10;
-    background-color: transparent;
+    /* background-color: transparent; */
     border-bottom: 1px solid rgba(231, 231, 231, 0.18);
 }
 
@@ -36,7 +36,7 @@ header.main-header nav {
 header.header-scrolled {
     padding: 0px;
     height: auto;
-    background-color: var(--neutral-100);
+    /* background-color: var(--neutral-100); */
     border-bottom: none;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 }

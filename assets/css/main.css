@@ -6,7 +6,8 @@
 @import url(./core/components/footer.css);
 @import url(./core/components/cta.css);
 /* @import url(./layouts/home.css); */
-@import url(./layouts/section-banner.css);
+/* @import url(./layouts/section-banner.css); */
+@import url(./layouts/home1.css);
 @import url(./layouts/effect-home.css);
 @import url(./layouts/section-aboutus.css);
 @import url(./layouts/section-challenge.css);

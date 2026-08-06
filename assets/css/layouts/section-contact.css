@@ -57,6 +57,7 @@
     color: white;
     border-radius: 0 4px 4px 0;
     background: var(--color-primary);
+    border-color: #00732c;
     transition: all 0.3s ease;
     /* Viền */
   }
@@ -67,7 +68,9 @@
   }
   .content-contact .btn:focus {
     color: white;
-    border: 2px solid #009f4d;
+    background-color: #008030;
+    border-color: #00732c;
+    box-shadow: 0 0 0 0.2rem rgba(38, 179, 92, 0.5);
   }
   @media (max-width: 768px) {
     .content-contact {
