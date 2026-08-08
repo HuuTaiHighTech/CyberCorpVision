@@ -1,8 +1,6 @@
 /* lúc nào cx dùng */
-
-
 body.header-scrolled {
-    padding-top: 80px !important;
+    padding-top: 80px;
 }
 
 
@@ -196,5 +194,14 @@ span.icon-close {
   right: 68px;        /* = 48px (width toggler) + 20px (khoảng cách mong muốn giữa 2 nút) */
 }
 
-
+@media (max-width: 991.98px) {
+    .main-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+}
+}
 
